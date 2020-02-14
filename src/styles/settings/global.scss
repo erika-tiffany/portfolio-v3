@@ -1,0 +1,35 @@
+/*------------------------------------*\
+  #Settings Font
+\*------------------------------------*/
+
+$font-family: 'Open Sans', sans-serif;
+
+
+
+
+
+/*------------------------------------*\
+  #Settings Font-weights
+\*------------------------------------*/
+
+$font-weight-light:      300;
+$font-weight-regular:    400;
+$font-weight-semi-bold:  600;
+$font-weight-bold:       700;
+$font-weight-extra-bold: 800;
+
+
+
+
+
+/*------------------------------------*\
+  #Settings Breakpoints
+  * @see https://eduardoboucas.github.io/include-media/
+  * @see https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
+\*------------------------------------*/
+
+$breakpoints: (phone: 480px, 
+               tablet: 767px, 
+               laptop: 1024px,
+               desktop: 1280px) !default;
+
