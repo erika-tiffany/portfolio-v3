@@ -1,0 +1,80 @@
+/*------------------------------------*\
+  #Mixins Lists
+\*------------------------------------*/
+
+/**
+ * 'Resets' a list element 
+ */
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/**
+ * 'Resets' a list element into a horizontal list
+ */
+@mixin horizontal-list {
+  @include reset-list;
+  @include display-flex;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #Mixins Flex
+  *
+  * Display Flex CSS properties with still required vendor prefixes based on:
+  * @see https://autoprefixer.github.io/
+\*------------------------------------*/
+
+@mixin display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display:        flex;
+}
+
+@mixin justify-content($position: center) {
+  -webkit-box-pack: $position;
+     -ms-flex-pack: $position;
+   justify-content: $position;
+}
+
+@mixin flex-direction($direction: column) {
+  // Set the box direction and orientation
+  @if $direction == column {
+    -webkit-box-direction: normal;
+       -webkit-box-orient: vertical;
+  } @else if $direction == column-reverse {
+    -webkit-box-direction: reverse;
+       -webkit-box-orient: vertical;
+  } @else if $direction == row-reverse {
+    -webkit-box-direction: reverse;
+        -webkit-box-orient: horizontal;
+  } @else {
+    -webkit-box-direction: normal;
+       -webkit-box-orient: horizontal;
+  }
+  // Set the flex direction
+  -ms-flex-direction: $direction;
+      flex-direction: $direction;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #Mixins Psuedo Elements
+\*------------------------------------*/
+
+/**
+ * Sets up the basic requirements for a psuedo CSS element
+ */
+ @mixin basic-pseudo-element {
+  content: "";
+  display: block;
+}
