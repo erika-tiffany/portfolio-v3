@@ -1,0 +1,20 @@
+/**
+ * Here we are going to set the box-sizing to border-box which seems more 
+ * intuitive. The border and padding values will be moved inside the element's  * box, cutting into the width/height of the box rather than expanding it. 
+ * Therefore an elements width includes element width + border + padding.
+ *
+ * Universal Box Sizing with Inheritance
+ *
+ * This reset gives you more flexibility as you can use content-box or 
+ * padding-box (where supported) at will, without worrying about a universal 
+ * selector overriding our CSS. 
+ * 
+ * @see https://css-tricks.com/box-sizing/
+ * @see https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+ 
+html { box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
