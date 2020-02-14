@@ -32,6 +32,7 @@
     ]
   },
   "devDependencies": {
+    "include-media": "^1.4.9",
     "node-sass": "^4.13.1"
   }
 }
