@@ -1,0 +1,14 @@
+/*------------------------------------*\
+  #Element Sub Headings
+\*------------------------------------*/
+
+.subheading {
+  color:          $base-text-medium;
+  font-weight:    $font-weight-light;
+  text-transform: uppercase;
+}
+
+  .subheading--large {
+    font-size:      1.3em;
+    letter-spacing: 0.2em;
+  }

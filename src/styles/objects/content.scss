@@ -1,0 +1,12 @@
+/*------------------------------------*\
+  #Object Main Site Content
+\*------------------------------------*/
+
+.content {
+  width:     100%;
+  max-width: 80%;
+}
+
+@include media(">=laptop") {
+  .content { max-width: 840px; }
+}
