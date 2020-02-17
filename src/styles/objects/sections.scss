@@ -2,7 +2,14 @@
   #Object Main Section
 \*------------------------------------*/
 
-.section { padding-left: 30px; }
+.section { 
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+@include media(">phone") {
+  .section { padding-right: 0%; }
+}
 
   .section--full-viewport {
     height:  100vh;

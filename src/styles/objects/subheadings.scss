@@ -3,12 +3,27 @@
 \*------------------------------------*/
 
 .subheading {
-  color:          $base-text-medium;
-  font-weight:    $font-weight-light;
   text-transform: uppercase;
+  font-weight:    $font-weight-light;
+  color:          $base-text-medium;
 }
 
   .subheading--large {
-    font-size:      1.3em;
     letter-spacing: 0.2em;
+    font-size:      1.1em;
+  }
+
+  .subheading--medium {
+    letter-spacing: 0.1em;
+    font-size:      0.9em;
+  }
+
+  @include media(">=tablet", "<laptop") {
+    .subheading--large { font-size: 1.2em; }
+    .subheading--medium { font-size: 1em; }
+  }
+
+  @include media(">=laptop")  {
+    .subheading--large { font-size: 1.3em; }
+    .subheading--medium { font-size: 1.1em; }
   }

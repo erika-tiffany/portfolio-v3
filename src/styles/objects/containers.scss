@@ -8,4 +8,8 @@
   @include display-flex;
 }
 
-  .container--center { @include justify-content(center); }
+  .container--center { @include justify-content(flex-end); }
+
+  @include media(">=phone") {
+    .container--center { @include justify-content(center); }
+  }

@@ -3,8 +3,34 @@
 \*------------------------------------*/
 
 h1 {
-  color:       $base-text-dark;
   font-weight: $font-weight-bold;
-  font-size:   3.5em;
   line-height: 1em;
+  font-size:   2.4em;
+  color:       $base-text-dark;
 }
+
+h2 {
+  font-weight: $font-weight-bold;
+  line-height: 1em;
+  font-size:   1.6em;
+  color:       $base-text-dark;
+}
+
+  @include media(">=phone", "<tablet") {
+    h1 { font-size: 2.7em; }
+  }
+
+  @include media(">=tablet", "<laptop") {
+    h1 { font-size: 2.7em; }
+    h2 { font-size: 1.7em; }
+  }
+
+  @include media(">=laptop", "<desktop")  {
+    h1 { font-size: 3.1em; }
+    h2 { font-size: 1.9em; }
+  }
+
+  @include media(">=desktop") {
+    h1 { font-size: 3.5em; }
+    h2 { font-size: 2.2em; }
+  }

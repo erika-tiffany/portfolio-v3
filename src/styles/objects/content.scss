@@ -5,8 +5,13 @@
 .content {
   width:     100%;
   max-width: 80%;
+  // border: 1px solid red;
 }
 
-@include media(">=laptop") {
+@include media(">phone", "<desktop") {
+  .content { max-width: 70%; }
+}
+
+@include media(">=desktop") {
   .content { max-width: 840px; }
 }
