@@ -1,9 +1,10 @@
 import React from 'react';
+import { DEFAULTGREY } from '../../constants';
 
-export class Link extends React.Component {
+export class ContactLink extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {color: "#898b8f"};
+    this.state = {color: DEFAULTGREY};
   }
 
   handleOnMouseOver = () => {
@@ -11,7 +12,7 @@ export class Link extends React.Component {
   }
 
   handleOnMouseOut = () => {
-    return this.setState({color: "#898b8f"});
+    return this.setState({color: DEFAULTGREY});
   }
 
   render() {
