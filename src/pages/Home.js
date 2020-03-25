@@ -3,9 +3,14 @@ import { Footer } from '../components/Footer';
 import { Stack } from '../components/Stack';
 import { Header } from '../components/Header';
 
-export const Home = (props) => {
-  const stackColors = ['base-yellow', 'base-blue', 'base-light-blue'];
+// home page stack colors
+const stackColors = [
+  'base-yellow', 
+  'base-blue', 
+  'base-light-blue'
+];
 
+export const Home = (props) => {
   return (
     <React.Fragment>
       <Stack colors={stackColors}/>
