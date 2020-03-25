@@ -6,7 +6,7 @@ export const Footer = (props) => {
     <footer className="section section--full-viewport">
       <span className="subheading subheading--medium">I can help.</span>
       <h2>Drop me a line</h2>
-      <ContactLinksList />
+      <ContactLinksList className=" stack-bottom-anchor"/>
     </footer>
   );
 }
