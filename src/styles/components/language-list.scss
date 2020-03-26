@@ -1,0 +1,23 @@
+/*------------------------------------*\
+  #Component Project Stack
+\*------------------------------------*/
+
+.language-list {
+  @include horizontal-list;
+  margin-top: 0.6rem;
+}
+
+  .language {
+    width: 37px;
+    height: 44px;
+    border: 1px dashed $base-text-light;
+    margin-right: 0.6rem;
+    @include display-flex;
+    @include justify-content;
+    @include align-items;
+  }
+
+    .language__svg {
+      width: 80%;
+      max-height: 60%;
+    }
