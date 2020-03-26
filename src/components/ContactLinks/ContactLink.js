@@ -1,38 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 
-export class ContactLink extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { color: '#4A4A4A' };
-  }
+export const ContactLink = (props) => {
+  const [color, setColor] = useState('#4A4A4A');
+  const LinkSvg = props.svg;
 
-  handleOnMouseOver = () => {
-    return this.setState({ color: this.props.hoverColor });
-  }
-
-  handleOnMouseOut = () => {
-    return this.setState({ color: '#4A4A4A' });
-  }
-
-  render() {
-    const LinkSvg = this.props.svg;
-
-    return (
-      <a href={ this.props.href }
-         onMouseOver={ this.handleOnMouseOver }
-         onMouseOut={ this.handleOnMouseOut }
-         className="main-links__link" 
-         rel="noopener noreferrer" 
-         target="_blank">
-        <LinkSvg className="main-links__icon" fill={ this.state.color } />
-      </a>
-    );
-  }
-}
-
-ContactLink.protoTypes = {
-  href: PropTypes.arrayOf(PropTypes.string).isRequired,
-  svg:  PropTypes.instanceOf(Element).isRequired,
-  hoverColor: PropTypes.arrayOf(PropTypes.string).isRequired,
+  return (
+    <a href={ props.href }
+       onMouseOver={ () => setColor(props.hoverColor) }
+       onMouseOut={ () => setColor('#4A4A4A') }
+       className="main-links__link" 
+       rel="noopener noreferrer" 
+       target="_blank">
+      <LinkSvg className="main-links__icon" fill={ color } />
+    </a>
+  );
 }
