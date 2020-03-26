@@ -16,29 +16,14 @@
     width:         200px;
   }
 
-  .stack:after {
-    @include basic-pseudo-element;
-    background-color: #ffffff;
-    border-radius:    7px 0px 0px 7px;
-    box-shadow:       -3px -2px 4px -2px rgba(0,0,0,0.29);
-    position: absolute;
-    width:    200px;
-    bottom: 45px;
-    left:   0px;
-    top:    45px;
+  .stack div:last-child {
+    box-shadow: -3px 0 9px -2px rgba(0,0,0,0.29);
   }
 
   @include media(">phone") {
     .stack div {
       border-radius: 11px;
       width:         220px;
-    }
-
-    .stack:after {
-      border-radius: 11px 0px 0px 11px;
-      width:         220px;
-      bottom:        50px;
-      top:           50px;
     }
   }
 
@@ -47,16 +32,9 @@
       border-radius: 13px;
       width:         230px;
     }
-
-    .stack:after {
-      border-radius: 13px 0px 0px 13px;
-      width:         230px;
-      bottom:        60px;
-      top:           60px;
-    }
   }
 
-  @for $i from 1 to 4 {
+  @for $i from 1 to 5 {
     .stack div:nth-child(#{$i}) {
       bottom: (($i - 1) * 15) + 0px;
       top:    (($i - 1) * 15) + 0px;
@@ -80,6 +58,11 @@
     }
   }
 
-  .stack--base-blue { background-color: $base-blue; }
+  .stack--base-white  { background-color: #ffffff; }
+  .stack--base-blue   { background-color: $base-blue; }
   .stack--base-light-blue { background-color: $base-light-blue; }
   .stack--base-yellow { background-color: $base-yellow; }
+  .stack--magnity-yellow { background-color: $magnity-yellow; }
+  .stack--magnity-purple { background-color: $magnity-purple; }
+  .stack--magnity-purple-grey { background-color: $magnity-purple-grey; }
+  
