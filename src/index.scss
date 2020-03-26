@@ -16,6 +16,7 @@
  * Global...............Globally-available variables and config.
  *
  * TOOLS
+ * Animate.css..........CSS animations library
  * Include Media........CSS media query mixin library
  *
  * GENERIC
@@ -30,11 +31,15 @@
  * OBJECTS
  * Containers...........Containing and constraining elements.
  * Sections.............Section elements.
+ *
+ * TRUMPS
+ * Utilities............Utility css classes to override other styling
  */
 
 @import "styles/settings/colors";
 @import "styles/settings/global";
 
+@import "~animate.css/animate.min.css";
 @import "~include-media/dist/_include-media";
 @import "styles/tools/mixins";
 
@@ -52,6 +57,8 @@
 
 @import "styles/components/main-links";
 @import "styles/components/stack";
+
+@import "styles/trumps/utilities";
 
 
 
