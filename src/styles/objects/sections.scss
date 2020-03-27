@@ -20,5 +20,17 @@
 
   .section__heading {
     margin-top:    0.6rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  @include media(">phone") {
+    .section__heading {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  @include media(">tablet") {
+    .section__heading {
+      margin-bottom: 3rem;
+    }
   }

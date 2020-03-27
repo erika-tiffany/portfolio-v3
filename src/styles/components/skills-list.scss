@@ -5,19 +5,49 @@
 .skills-list { @include reset-list }
 
   .skill {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.55rem;
     position:      relative;
-    height:        36px;
+    height:        28px;
+  }
+
+  @include media(">phone") {
+    .skill {
+      margin-bottom: 0.65rem;
+      height:        30px;
+    }
+  }
+
+  @include media(">laptop") {
+    .skill {
+      margin-bottom: 0.75rem;
+      height:        36px;
+    }
   }
 
   .skill__label {
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    text-shadow:    0 2px 4px rgba(0,0,0,0.11);
-    line-height:    36px;
-    font-size:      16px;
+    text-shadow:    0 1px 3px rgba(0,0,0,0.3);
+    line-height:    28px;
+    font-size:      13px;
     color:        #FFFFFF;
-    left:           0.9rem;
+    left:           0.4rem;
+  }
+
+  @include media(">phone") {
+    .skill__label {
+      line-height: 30px;
+      font-size:   15px;
+      left:        0.8rem;
+    }
+  }
+
+  @include media(">laptop") {
+    .skill__label {
+      line-height: 36px;
+      font-size:   16px;
+      left:        0.9rem;
+    }
   }
 
   .skill__competency {
