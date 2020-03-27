@@ -13,8 +13,8 @@
     border-radius: 7px;
     box-shadow:    0 2px 4px 0 rgba(0,0,0,0.50);
     position:      absolute;
+    z-index:       -1;
     width:         200px;
-    z-index: -1;
   }
 
   .stack div:last-child {
@@ -62,8 +62,8 @@
   .stack--base-white  { background-color: #ffffff; }
   .stack--base-blue   { background-color: $base-blue; }
   .stack--base-light-blue { background-color: $base-light-blue; }
-  .stack--base-yellow { background-color: $base-yellow; }
-  .stack--magnity-yellow { background-color: $magnity-yellow; }
-  .stack--magnity-purple { background-color: $magnity-purple; }
+  .stack--base-yellow     { background-color: $base-yellow; }
+  .stack--magnity-yellow  { background-color: $magnity-yellow; }
+  .stack--magnity-purple  { background-color: $magnity-purple; }
   .stack--magnity-purple-grey { background-color: $magnity-purple-grey; }
   

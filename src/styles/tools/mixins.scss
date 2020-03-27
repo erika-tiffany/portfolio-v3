@@ -43,7 +43,9 @@
 }
 
 @mixin align-items($position: center) {
-  align-items: $position;
+  -webkit-box-align: $position;
+     -ms-flex-align: $position;
+        align-items: $position;
 }
 
 @mixin flex-direction($direction: column) {
@@ -81,4 +83,19 @@
  @mixin basic-pseudo-element {
   content: "";
   display: block;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #Mixins Transition
+\*------------------------------------*/
+
+@mixin transition($property, $duration, $transition) {
+  -webkit-transition: $property $duration $transition;
+       -o-transition: $property $duration $transition;
+          transition: $property $duration $transition;
 }
