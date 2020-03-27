@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Stack } from '../components/Stack/Stack';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { LanguageList } from '../components/Languages/LanguageList';
+import { ProjectDuration } from '../components/ProjectDuration';
 
 const stackColors = [
   'magnity-yellow', 
@@ -19,7 +21,10 @@ export const Magnity = (props) => {
              handleChangeStackAnimated={ () => setStackAnimated(true) }/>
       <Header title="Magnity Application" 
               breadcrumb={ ['Erika Kishi', 'Projects'] } 
-              animate={ stackAnimated } />
+              animate={ stackAnimated } >
+        <ProjectDuration duration="2015 - 2016"/>
+        <LanguageList languages={['PHP','JavaScript','HTML5','CSS3']}/>
+      </Header>
 
       <section className="section section--full-viewport">
         <header>

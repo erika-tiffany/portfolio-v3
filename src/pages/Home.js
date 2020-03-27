@@ -3,12 +3,22 @@ import { Stack } from '../components/Stack/Stack';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ContactLinksList } from '../components/ContactLinks/ContactLinksList';
+import { SkillsList } from '../components/Skills/SkillsList';
+import { SectionHeader } from '../components/SectionHeader';
 
 const stackColors = [
   'base-yellow', 
   'base-blue', 
   'base-light-blue',
   'base-white',
+];
+
+const skills = [
+  { skill: 'Back-end Development', competency: 95 },
+  { skill: 'Front-end Development', competency: 70 },
+  { skill: 'API Integration', competency: 80 },
+  { skill: 'AWS Architecture', competency: 35 },
+  { skill: 'Design', competency: 50 },
 ];
 
 export const Home = (props) => {
@@ -25,24 +35,10 @@ export const Home = (props) => {
       </Header>
 
       <section className="section section--full-viewport">
-        <header>
-          <span className="subheading subheading--medium">Hi, I'm a Kiwi that enjoys dipping my feet in all aspects of development.</span>
-          <h2>What I Can Do</h2>
-        </header>
-      </section>
-
-      <section className="section">
-        <header>
-          <span className="subheading subheading--medium">What I've worked on.</span>
-          <h2>Selected Works & Projects</h2>
-        </header>
-      </section>
-
-      <section className="section">
-        <header>
-          <span className="subheading subheading--medium">What I've worked on.</span>
-          <h2>Selected Works & Projects</h2>
-        </header>
+        <SectionHeader subheading="Hi, I'm a Kiwi that enjoys dipping my feet in all aspects of development."
+                       heading="What I Can Do"/>
+        <SkillsList skills={ skills }
+                    animate={ stackAnimated } />
       </section>
 
       <Footer />
