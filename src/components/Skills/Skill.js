@@ -4,8 +4,14 @@ export const Skill = (props) => {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    if (props.animate === true) setWidth(props.competency);
-  }, [props.animate]);
+    if (props.animate === true) {
+      // use setTimeout to stagger the widths animating for each skill
+      const timer = setTimeout(() => {
+        setWidth(props.competency);
+      }, props.skillId * 150);
+      return () => clearTimeout(timer);
+    }
+  }, [props]);
 
   return (
     <li className="skill">

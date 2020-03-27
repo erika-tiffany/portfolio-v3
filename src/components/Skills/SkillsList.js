@@ -8,8 +8,9 @@ export const SkillsList = (props) => {
     <ul className="skills-list">
       { props.skills.map((skill, key) => (
         <Skill key={ key } {...skill} 
+               skillId={ key }
                color={ sample( HOMEPAGE_COLORS ) }
-               animate={ props.animate } />
+               animate={ props.visible } />
       )) }
     </ul>
   );

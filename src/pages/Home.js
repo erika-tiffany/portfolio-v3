@@ -5,6 +5,7 @@ import { Footer } from '../components/Footer';
 import { ContactLinksList } from '../components/ContactLinks/ContactLinksList';
 import { SkillsList } from '../components/Skills/SkillsList';
 import { SectionHeader } from '../components/SectionHeader';
+import { Section } from '../components/Section';
 
 const stackColors = [
   'base-yellow', 
@@ -25,7 +26,7 @@ export const Home = (props) => {
   const [stackAnimated, setStackAnimated] = useState(false);
 
   return (
-    <React.Fragment>
+    <>
       <Stack colors={ stackColors }
              handleChangeStackAnimated={ () => setStackAnimated(true) }/>
       <Header title="Full Stack Developer & Designer" 
@@ -34,15 +35,18 @@ export const Home = (props) => {
         <ContactLinksList />
       </Header>
 
-      <section className="section section--full-viewport">
-        <SectionHeader subheading="Hi, I'm a Kiwi that enjoys dipping my feet in all aspects of development."
-                       heading="What I Can Do"/>
-        <SkillsList skills={ skills }
-                    animate={ stackAnimated } />
-      </section>
+      <Section render={ visible => (
+        <>
+          <SectionHeader subheading="Hi, I'm a Kiwi that enjoys dipping my feet in all aspects of development."
+                         heading="What I Can Do"
+                         visible={ visible } />
+          <SkillsList skills={ skills }
+                      visible={ visible } />
+        </>
+      )} />
 
       <Footer />
-    </React.Fragment>
+    </>
   );
 }
 
