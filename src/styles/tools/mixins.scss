@@ -42,6 +42,10 @@
    justify-content: $position;
 }
 
+@mixin align-items($position: center) {
+  align-items: $position;
+}
+
 @mixin flex-direction($direction: column) {
   // Set the box direction and orientation
   @if $direction == column {

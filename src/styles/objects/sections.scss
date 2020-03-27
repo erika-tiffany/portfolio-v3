@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .section { 
-  padding-left: 3%;
+  padding-left: 4%;
   padding-right: 3%;
 }
 
@@ -16,4 +16,9 @@
     @include display-flex;
     @include flex-direction(column);
     @include justify-content(center);
+  }
+
+  .section__heading {
+    margin-top:    0.6rem;
+    margin-bottom: 3rem;
   }
