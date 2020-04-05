@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Magnity } from './pages/Magnity';
+import { ScrollToTop } from './components/ScrollToTop';
 
 function App() {
   return (
@@ -13,9 +14,11 @@ function App() {
       <div className="content">
         <Switch>
           <Route path="/magnity">
+            <ScrollToTop />
             <Magnity />
           </Route>
           <Route path="/">
+            <ScrollToTop />
             <Home />
           </Route>
         </Switch>
