@@ -92,7 +92,10 @@ export const Home = (props) => {
       <Stack colors={ stackColors }
              handleChangeStackAnimated={ () => setStackAnimated(true) }/>
       <Header title="Full Stack Developer & Designer" 
-              breadcrumb={ ['Erika Kishi'] } 
+              breadcrumbs={ [{
+                link: '#',
+                title: 'Erika Kishi'
+              }] } 
               animate={ stackAnimated }>
         <ContactLinksList />
       </Header>
@@ -114,7 +117,7 @@ export const Home = (props) => {
           <SectionHeader subheading="What I've worked on."
                          heading="Selected Works & Projects"
                          visible={ visible } />
-          <ul className="reset-list">
+          <ul className="reset-list" id="projects">
             { projects.map((project, key) => (
               <li role="article" key={ key }>
                 <Link to="/magnity">

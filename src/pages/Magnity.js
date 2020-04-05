@@ -20,7 +20,13 @@ export const Magnity = (props) => {
       <Stack colors={ stackColors }
              handleChangeStackAnimated={ () => setStackAnimated(true) }/>
       <Header title="Magnity Application" 
-              breadcrumb={ ['Erika Kishi', 'Projects'] } 
+              breadcrumbs={ [{
+                link: '/',
+                title: 'Erika Kishi'
+              }, {
+                link: '/#projects',
+                title: 'Projects'
+              }] } 
               animate={ stackAnimated } >
         <ProjectDuration duration="2015 - 2016"/>
         <LanguageList languages={['PHP','JavaScript','HTML5','CSS3']}/>
