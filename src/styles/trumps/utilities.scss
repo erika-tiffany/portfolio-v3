@@ -5,3 +5,7 @@
 .display-none {
   display: none;
 }
+
+.reset-list {
+  @include reset-list;
+}

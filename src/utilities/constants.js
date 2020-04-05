@@ -6,6 +6,16 @@ import { ReactComponent as Php } from '../icons/php.svg';
 import { ReactComponent as JavaScript } from '../icons/javascript.svg';
 import { ReactComponent as Css } from '../icons/css3.svg';
 import { ReactComponent as Html } from '../icons/html5.svg';
+import { ReactComponent as Craft } from '../icons/craft-cms.svg';
+import { ReactComponent as Sketch } from '../icons/sketch.svg';
+import { ReactComponent as Vue } from '../icons/vue.svg';
+import { ReactComponent as Bem } from '../icons/bem.svg';
+import { ReactComponent as Aws } from '../icons/aws.svg';
+import { ReactComponent as Drupal } from '../icons/drupal-7.svg';
+import { ReactComponent as Jade } from '../icons/jade.svg';
+import { ReactComponent as Laravel } from '../icons/laravel.svg';
+import { ReactComponent as Sass } from '../icons/sass.svg';
+
 
 // Homepage contact links
 export const CONTACT_LINKS = [
@@ -24,3 +34,16 @@ export const DEVELOPMENT_LANGUAGE_ICONS = [
   { svg: Css, title: 'CSS3' },
   { svg: Html, title: 'HTML5' },
 ];
+
+export const TECHNOLOGIES_FRAMEWORKS = [
+  { svg: Craft, title: 'Craft CMS' },
+  { svg: Sketch, title: 'Sketch' },
+  { svg: Vue, title: 'Vue.js' },
+  { svg: Bem, title: 'BEM' },
+  { svg: Sketch, title: 'Sketch' },
+  { svg: Aws, title: 'Amazon Web Services' },
+  { svg: Drupal, title: 'Drupal 7' },
+  { svg: Jade, title: 'JADE' },
+  { svg: Laravel, title: 'Laravel' },
+  { svg: Sass, title: 'Sass' },
+]

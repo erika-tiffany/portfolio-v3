@@ -13,7 +13,7 @@ export const Section = (props) => {
   }
 
   return (
-    <section className="section section--full-viewport">
+    <section className={ 'section ' + props.className }>
       <VisibilitySensor onChange={ onChange }>
         { props.render(visible) }
       </VisibilitySensor>

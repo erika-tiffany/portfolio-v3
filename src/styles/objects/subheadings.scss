@@ -18,12 +18,19 @@
     font-size:      0.9em;
   }
 
+  .subheading--small {
+    letter-spacing: 0.1em;
+    font-size:      0.7em;
+  }
+
   @include media(">=tablet", "<laptop") {
     .subheading--large { font-size: 1.2em; }
     .subheading--medium { font-size: 1em; }
+    // .subheading--small { font-size: 0.7em; }
   }
 
   @include media(">=laptop")  {
     .subheading--large { font-size: 1.3em; }
     .subheading--medium { font-size: 1.1em; }
+    .subheading--small { font-size: 0.8em; }
   }

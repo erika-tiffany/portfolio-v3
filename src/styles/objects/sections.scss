@@ -5,6 +5,7 @@
 .section { 
   padding-left: 4%;
   padding-right: 3%;
+  overflow: hidden;
 }
 
 @include media(">phone") {
