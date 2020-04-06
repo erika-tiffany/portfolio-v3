@@ -15,6 +15,13 @@ import { ReactComponent as Drupal } from '../icons/drupal-7.svg';
 import { ReactComponent as Jade } from '../icons/jade.svg';
 import { ReactComponent as Laravel } from '../icons/laravel.svg';
 import { ReactComponent as Sass } from '../icons/sass.svg';
+import { ReactComponent as Stripe } from '../icons/stripe.svg';
+import { ReactComponent as Bugsnag } from '../icons/bugsnag.svg';
+import { ReactComponent as Git } from '../icons/git.svg';
+import { ReactComponent as GoogleAnalytics } from '../icons/google-analytics.svg';
+import { ReactComponent as GoogleMaps } from '../icons/google-maps.svg';
+import { ReactComponent as Intercom } from '../icons/intercom.svg';
+import { ReactComponent as Jquery } from '../icons/jquery.svg';
 
 
 // Homepage contact links
@@ -46,4 +53,11 @@ export const TECHNOLOGIES_FRAMEWORKS = [
   { svg: Jade, title: 'JADE' },
   { svg: Laravel, title: 'Laravel' },
   { svg: Sass, title: 'Sass' },
+  { svg: Stripe, title: 'Stripe' },
+  { svg: Git, title: 'Git' },
+  { svg: GoogleAnalytics, title: 'Google Analytics' },
+  { svg: GoogleMaps, title: 'Google Maps' },
+  { svg: Intercom, title: 'Intercom' },
+  { svg: Jquery, title: 'JQuery' },
+  { svg: Bugsnag, title: 'Bugsnag' },
 ]
