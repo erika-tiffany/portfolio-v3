@@ -86,12 +86,7 @@
   /**
   * Project Abstract - Divider
   **/
-  .project-abstract__divider { 
-    border:      0px;
-    border-top:  $base-text-light dashed 1px;
-    width:       0px;
-    @include transition(width, 1s, ease-in-out);
-  }
+  .project-abstract__divider { width: 0px; }
 
   @include media(">630px") {
     .project-abstract__divider {  margin-left: 0px; }

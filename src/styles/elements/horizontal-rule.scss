@@ -1,0 +1,9 @@
+/*------------------------------------*\
+  #Element Horizontal Rule
+\*------------------------------------*/
+
+hr {
+  border:     0px;
+  border-top: $base-text-light dashed 1px;
+  @include transition(width, 1s, ease-in-out);
+}
