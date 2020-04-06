@@ -14,7 +14,7 @@ export const Section = (props) => {
 
   return (
     <section className={ 'section ' + props.className }>
-      <VisibilitySensor onChange={ onChange }>
+      <VisibilitySensor partialVisibility={ true } onChange={ onChange }>
         { props.render(visible) }
       </VisibilitySensor>
     </section>
