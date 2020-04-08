@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import VisibilitySensor from "react-visibility-sensor";
-import { TechnologyTag } from './TechnologyTag';
+import { Tag } from './Tag';
 
-export const TechnologyTagsList = (props) => {
+export const TagsList = (props) => {
   const [visible, setVisible] = useState(false);
   const [finishedAnimating, setFinishedAnimating] = useState(false);
 
@@ -24,12 +24,12 @@ export const TechnologyTagsList = (props) => {
       <>
         <ul className="project-intro__tags">
           { props.tags.map((tag, key) => (
-            <TechnologyTag key={ key } 
-                           visible={ visible } 
-                           tag={ tag } 
-                           order={ key }
-                           last={ (props.tags.length - 1) <= key }
-                           onFinishAnimating={ handleFinishedAnimating } />
+            <Tag key={ key } 
+                 visible={ visible } 
+                 tag={ tag } 
+                 order={ key }
+                 last={ (props.tags.length - 1) <= key }
+                 onFinishAnimating={ handleFinishedAnimating } />
           )) }
         </ul>
         <hr className={ 'project-intro__divider' + (finishedAnimating ? ' project-intro__divider-show' : '') } />

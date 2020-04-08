@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionHeader } from './SectionHeader';
+import { Header as SectionHeader } from './Section/Header';
 import { ContactLinksList } from './ContactLinks/ContactLinksList';
 
 export const Footer = (props) => {

@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import { find } from 'lodash';
 import { Icon } from './Icon';
-import { TECHNOLOGIES_FRAMEWORKS } from '../../utilities/constants';
-import { ReactComponent as Unknown } from '../../icons/unknown.svg';
 import VisibilitySensor from "react-visibility-sensor";
 
 export const IconsList = (props) => {
@@ -16,12 +13,6 @@ export const IconsList = (props) => {
     setVisible(isVisible);
   }
 
-  function findTechnologyFrameworkIcon(title) {
-    const technology = find(TECHNOLOGIES_FRAMEWORKS,['title', title]);
-    if (technology === undefined) return { svg: Unknown, title: title };
-    return technology;
-  }
-
   return (
     <VisibilitySensor onChange={ handleVisibilityChange }>
       <>
@@ -30,7 +21,7 @@ export const IconsList = (props) => {
             <Icon key={ key } 
                   order={ key } 
                   visible={ visible } 
-                  {...findTechnologyFrameworkIcon(icon)} />
+                  title={ icon } />
           )) }
         </ul>
       </>

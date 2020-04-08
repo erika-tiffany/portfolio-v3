@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import { Stack } from '../components/Stack/Stack';
-import { Header } from '../components/Header';
+import React from 'react';
+import { PageHeader } from '../components/PageHeader';
 import { Footer } from '../components/Footer';
 import { ContactLinksList } from '../components/ContactLinks/ContactLinksList';
 import { SkillsList } from '../components/Skills/SkillsList';
-import { SectionHeader } from '../components/SectionHeader';
-import { Section } from '../components/Section';
+import { Header as SectionHeader } from '../components/Section/Header';
+import { Section } from '../components/Section/Section';
 import { ProjectAbstract } from '../components/ProjectAbstract/Abstract';
 import { Link } from 'react-router-dom';
 
@@ -15,6 +14,11 @@ const stackColors = [
   'base-light-blue',
   'base-white',
 ];
+
+const breadcrumbs = [{
+  link: '#',
+  title: 'Erika Kishi'
+}];
 
 const skills = [
   { skill: 'Back-end Development', competency: 95 },
@@ -85,20 +89,13 @@ const projects = [
 ]
 
 export const Home = (props) => {
-  const [stackAnimated, setStackAnimated] = useState(false);
-
   return (
     <>
-      <Stack colors={ stackColors }
-             handleChangeStackAnimated={ () => setStackAnimated(true) }/>
-      <Header title="Full Stack Developer & Designer" 
-              breadcrumbs={ [{
-                link: '#',
-                title: 'Erika Kishi'
-              }] } 
-              animate={ stackAnimated }>
+      <PageHeader stackColors={ stackColors }
+                  title="Full Stack Developer & Designer"
+                  breadcrumbs={ breadcrumbs }>
         <ContactLinksList />
-      </Header>
+      </PageHeader>
 
       <Section 
         className="section--full-viewport"

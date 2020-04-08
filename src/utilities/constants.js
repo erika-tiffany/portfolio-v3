@@ -10,7 +10,7 @@ import { ReactComponent as Craft } from '../icons/craft-cms.svg';
 import { ReactComponent as Sketch } from '../icons/sketch.svg';
 import { ReactComponent as Vue } from '../icons/vue.svg';
 import { ReactComponent as Bem } from '../icons/bem.svg';
-import { ReactComponent as Aws } from '../icons/aws.svg';
+import { ReactComponent as Aws } from '../icons/aws/aws.svg';
 import { ReactComponent as Drupal } from '../icons/drupal-7.svg';
 import { ReactComponent as Jade } from '../icons/jade.svg';
 import { ReactComponent as Laravel } from '../icons/laravel.svg';
@@ -60,4 +60,8 @@ export const TECHNOLOGIES_FRAMEWORKS = [
   { svg: Intercom, title: 'Intercom' },
   { svg: Jquery, title: 'JQuery' },
   { svg: Bugsnag, title: 'Bugsnag' },
-]
+  { svg: Php, title: 'PHP' },
+  { svg: JavaScript, title: 'JavaScript' },
+  { svg: Css, title: 'CSS3' },
+  { svg: Html, title: 'HTML5' },
+];
