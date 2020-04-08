@@ -1,0 +1,107 @@
+/*------------------------------------*\
+  #Component Project Figure
+\*------------------------------------*/
+
+.project-figure { 
+  @include display-flex;
+  @include flex-direction(column);
+  margin: 0px 0px 3rem;
+}
+
+@include media(">tablet") {
+  .project-figure{ 
+    @include flex-direction(row);
+    margin: 0px 0px 2.6rem;
+  }
+}
+
+  /**
+   * Project Figure - Caption
+   **/
+  .project-figure__caption {
+    @include flex-order(2);
+    @include display-flex;
+    @include flex-direction(column);
+    text-align: center;
+    flex-basis: 100%;
+    flex-grow:  0;
+    max-width:  400px;
+    padding:    0rem 1.3rem;
+  }
+
+  @include media(">tablet") {
+    .project-figure__caption { 
+      @include flex-order(1);
+      text-align: left;
+      max-width:  220px;
+      padding:    0rem;
+    }
+  }
+
+  @include media(">laptop") {
+    .project-figure__caption { max-width: 250px; }
+  }
+
+    .project-figure__caption__heading {
+      @include flex-order(1);
+      margin: 1.5rem 0rem 0.5rem;
+    }
+
+    @include media(">tablet") {
+      .project-figure__caption__heading { 
+        @include flex-order(2);
+        padding-right: 20px;
+        margin:        0.6rem 0rem 0.5rem;
+      }
+    }
+
+    @include media(">laptop") {
+      .project-figure__caption__heading { margin: 0.8rem 0rem 0.7rem; }
+    }
+
+    .project-figure__caption .subheading {
+      @include flex-order(3);
+      line-height: 1.4em;
+      margin-top: 0.5rem;
+    }
+
+    @include media(">tablet") {
+      .project-figure__caption .subheading { padding-right: 20px; }
+    }
+
+
+  /**
+   * Project Figure - Divider
+   **/
+  .project-figure__divider {
+    @include flex-order(2);
+    margin-left: 0px;
+    width:       0px;
+  }
+
+    .project-figure__divider-show { width: 100%; }
+
+    @include media(">tablet") {
+      .project-figure__divider { @include flex-order(1); }
+    }
+
+
+  /**
+   * Project Figure - Container
+   **/
+  .project-figure__container {
+    @include flex-order(1);
+    border-radius: 7px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.34);
+    max-width: 400px;
+    overflow: hidden;
+  }
+
+  @include media(">tablet") {
+    .project-figure__container { @include flex-order(2); }
+  }
+
+    .project-figure__container img {
+      height: auto;
+      width:  100%;
+    }

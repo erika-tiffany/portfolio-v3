@@ -1,0 +1,87 @@
+/*------------------------------------*\
+  #Component Project Intro
+\*------------------------------------*/
+
+  /**
+  * Project Intro - Divider
+  **/
+  .project-intro__divider {
+    margin-bottom: 1.7rem;
+    margin-top:    1.7rem;
+    margin-left:   0px;
+    width:         0%;
+  }
+
+    .project-intro__divider-show { width: 100%; }
+
+  /**
+  * Project Intro - Tags
+  **/
+  .project-intro__tags { 
+    @include reset-list;
+    @include display-flex;
+    @include flex-direction(column);
+  }
+
+  @include media(">tablet") {
+    .project-intro__tags {
+      @include flex-direction(row);
+      flex-wrap: wrap;
+    }
+  }
+
+    .project-intro__tag {
+      letter-spacing: 1.1px;
+      border-radius:  4px;
+      font-weight:    $font-weight-bold;
+      background:     $base-text-light;
+      font-size:      0.8em;
+      padding:        10px 20px;
+      margin:         0px 0px 10px 0px;
+      color:          $magnity-purple;
+    }
+
+    @include media(">tablet") {
+      .project-intro__tag {
+        font-size:     0.75em;
+        margin:        0px 12px 10px 0px;
+      }
+    }
+
+  /**
+  * Project Intro - Icons
+  **/
+  .project-intro__icons { 
+    @include horizontal-list;
+    @include align-items(center);
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  @include media(">tablet") {
+    .project-intro__icons { width: 70%; }
+  }
+
+  @include media(">laptop") {
+    .project-intro__icons { width: 55%; }
+  }
+
+    .project-intro__icon { margin: 0px 15px 15px 0px; }
+
+    @include media(">tablet") {
+      .project-intro__icon { margin: 0px 10px 10px 0px; }
+    }
+
+    .project-intro__icon svg {
+      color: $magnity-purple;
+      max-width: 50px;
+      max-height: 50px;
+    }
+
+    @include media(">tablet") {
+      .project-intro__icon svg {
+        max-width: 40px;
+        max-height: 40px;
+      }
+    }
+  

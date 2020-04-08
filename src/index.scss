@@ -48,17 +48,22 @@
 
 @import "styles/elements/body";
 @import "styles/elements/headings";
+@import "styles/elements/horizontal-rule";
 @import "styles/elements/html";
 @import "styles/elements/links";
+@import "styles/elements/paragraph";
 
 @import "styles/objects/containers";
 @import "styles/objects/content";
 @import "styles/objects/sections";
 @import "styles/objects/subheadings";
 
+@import "styles/components/facet";
 @import "styles/components/language-list";
 @import "styles/components/main-links";
 @import "styles/components/project-abstract";
+@import "styles/components/project-figure";
+@import "styles/components/project-intro";
 @import "styles/components/skills-list";
 @import "styles/components/stack";
 

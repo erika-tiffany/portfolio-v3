@@ -1,0 +1,32 @@
+/*------------------------------------*\
+  #Component Facet
+\*------------------------------------*/
+
+.facet-list {
+  @include reset-list;
+}
+
+.facet {
+  margin-top: 55px;
+}
+
+  .facet__icons {
+    @include horizontal-list;
+    @include align-items(center);
+  }
+
+    .facet__icon {
+      margin-right: 10px;
+    }
+
+      .facet__icon svg {
+        max-width: 45px;
+        max-height: 45px;
+        color: $magnity-purple;
+      }
+
+  .facet h3 {
+    display: inline-block;
+    border-top: $base-text-light dashed 1px;
+    padding-top: 15px;
+  }
