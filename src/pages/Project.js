@@ -57,19 +57,23 @@ export const Project = (props) => {
           </>
       )} />
 
-      <Section 
-        className="section--row section--margin-bottom" 
-        render={ visible => (
-          <>
-            <SectionHeader subheading={ props.cloud.subheading }
-                           heading={ props.cloud.heading }
-                           visible={ visible } />
-            <div>
-              <Text text={ props.cloud.text } />
-              <Breakdown facets={ props.cloud.facets } />
-            </div>
-          </>
-      )} />
+      {
+        (props.cloud)
+        ? <Section 
+            className="section--row section--margin-bottom" 
+            render={ visible => (
+              <>
+                <SectionHeader subheading={ props.cloud.subheading }
+                              heading={ props.cloud.heading }
+                              visible={ visible } />
+                <div>
+                  <Text text={ props.cloud.text } />
+                  <Breakdown facets={ props.cloud.facets } />
+                </div>
+              </>
+          )} />
+        : <></>
+      }
 
       <Footer />
     </>
