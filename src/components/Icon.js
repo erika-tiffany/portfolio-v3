@@ -6,5 +6,5 @@ export const Icon = (props) => {
   const IconSvg = icon.svg;
   const fill = props.fill ? props.fill : '#000000';
 
-  return <IconSvg fill={ fill } />;
+  return <IconSvg className={ props.className ? props.className : '' } fill={ fill } />;
 }
