@@ -39,6 +39,23 @@ import { ReactComponent as Postman } from '../icons/postman.svg';
 import { ReactComponent as Unsplash } from '../icons/unsplash.svg';
 import { ReactComponent as TinyPng } from '../icons/tinypng.svg';
 import { ReactComponent as Ngrok } from '../icons/ngrok.svg';
+import { ReactComponent as GooglePageSpeedInsights } from '../icons/google/page-speed-insights.svg';
+import { ReactComponent as Bitbucket } from '../icons/bitbucket.svg';
+import { ReactComponent as Yii } from '../icons/yii.svg';
+import { ReactComponent as Algolia } from '../icons/algolia.svg';
+import { ReactComponent as Imgix } from '../icons/imgix.svg';
+import { ReactComponent as Coassemble } from '../icons/coassemble.svg';
+import { ReactComponent as Mandrill } from '../icons/mandrill.svg';
+import { ReactComponent as AuthZero } from '../icons/auth0.svg';
+import { ReactComponent as Twig } from '../icons/twig.svg';
+import { ReactComponent as ReactJs } from '../icons/react.svg';
+import { ReactComponent as Photoshop } from '../icons/adobe/photoshop.svg';
+import { ReactComponent as Illustrator } from '../icons/adobe/illustrator.svg';
+import { ReactComponent as Fireworks } from '../icons/adobe/fireworks.svg';
+import { ReactComponent as InDesign } from '../icons/adobe/indesign.svg';
+import { ReactComponent as Rhino } from '../icons/rhino.svg';
+import { ReactComponent as AutoCad } from '../icons/autocad.svg';
+import { ReactComponent as ThreeDs } from '../icons/3ds.svg';
 import { ReactComponent as Unknown } from '../icons/unknown.svg';
 import { find } from 'lodash';
 
@@ -78,6 +95,23 @@ export function findIcon(title) {
     { svg: Unsplash, title: 'Unsplash' },
     { svg: TinyPng, title: 'TinyPng' },
     { svg: Ngrok, title: 'Ngrok' },
+    { svg: GooglePageSpeedInsights, title: 'Google Page Speed Insights' },
+    { svg: Bitbucket, title: 'Bitbucket' },
+    { svg: Yii, title: 'Yii' },
+    { svg: Algolia, title: 'Algolia' },
+    { svg: Imgix, title: 'Imgix' },
+    { svg: Coassemble, title: 'Coassemble' },
+    { svg: Mandrill, title: 'Mandrill' },
+    { svg: AuthZero, title: 'Auth0' },
+    { svg: Twig, title: 'Twig' },
+    { svg: ReactJs, title: 'React' },
+    { svg: Photoshop, title: 'Adobe Photoshop' },
+    { svg: Illustrator, title: 'Adobe Illustrator' },
+    { svg: Fireworks, title: 'Adobe Fireworks' },
+    { svg: InDesign, title: 'Adobe InDesign' },
+    { svg: Rhino, title: 'Rhinoceros 3d' },
+    { svg: AutoCad, title: 'AutoCad' },
+    { svg: ThreeDs, title: '3DS Max' },
     { svg: Php, title: 'PHP' },
     { svg: JavaScript, title: 'JavaScript' },
     { svg: Css, title: 'CSS3' },
