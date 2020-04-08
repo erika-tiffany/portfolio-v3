@@ -12,3 +12,7 @@ p {
 @include media(">tablet") {
   p { font-size:   0.9em; }
 }
+
+p a {
+  text-decoration: underline;
+}

@@ -12,26 +12,54 @@
   .section { padding-right: 0%; }
 }
 
+  /**
+   * Section - Full Viewport
+   **/
   .section--full-viewport {
-    height:  100vh;
     @include display-flex;
     @include flex-direction(column);
     @include justify-content(center);
+    height: 100vh;
   }
 
-  .section__heading {
-    margin-top:    0.6rem;
-    margin-bottom: 2rem;
+  /**
+   * Section - Row i.e. heading and content on same row
+   **/
+
+  @include media(">tablet") {
+    .section--row { @include display-flex; }
   }
+
+    /**
+     * Section - Row Header
+     **/
+    @include media(">tablet") {
+      .section--row header {
+        flex-shrink:   0;
+        flex-basis:    220px;
+        flex-grow:     0;
+        padding-right: 20px;
+      }
+    }
+
+    @include media(">laptop") {
+      .section--row header { flex-basis: 250px; }
+    }
+
+  /**
+   * Section - Heading
+   **/
+  .section__heading { margin: 0.6rem 0rem 2rem; }
 
   @include media(">phone") {
-    .section__heading {
-      margin-bottom: 2.5rem;
-    }
+    .section__heading { margin-bottom: 2.5rem; }
   }
 
   @include media(">tablet") {
-    .section__heading {
-      margin-bottom: 3rem;
-    }
+    .section__heading { margin-bottom: 3rem; }
   }
+
+  /**
+   * Section - With margin bottom
+   **/
+  .section--margin-bottom { margin-bottom: 15rem; }

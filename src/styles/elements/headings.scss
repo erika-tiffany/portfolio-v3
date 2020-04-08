@@ -14,6 +14,15 @@ h2 {
   line-height: 1em;
   font-size:   1.6em;
   color:       $base-text-dark;
+  // word-break:  break-all;
+  // @include hyphen;
+}
+
+h3 {
+  font-weight: $font-weight-bold;
+  line-height: 1em;
+  font-size:   1.3em;
+  color:       $base-text-dark;
 }
 
   @include media(">=phone", "<tablet") {
@@ -23,14 +32,17 @@ h2 {
   @include media(">=tablet", "<laptop") {
     h1 { font-size: 2.7em; }
     h2 { font-size: 1.7em; }
+    h3 { font-size: 1.4em; }
   }
 
   @include media(">=laptop", "<desktop")  {
     h1 { font-size: 3.1em; }
     h2 { font-size: 1.9em; }
+    h3 { font-size: 1.5em; }
   }
 
   @include media(">=desktop") {
     h1 { font-size: 3.5em; }
     h2 { font-size: 2.2em; }
+    h3 { font-size: 1.7em; }
   }
