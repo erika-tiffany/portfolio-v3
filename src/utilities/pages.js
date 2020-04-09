@@ -1,3 +1,119 @@
+export const HOME = {
+  title: 'Full Stack Developer & Designer',
+  stackColors: ['#F2CD88', '#88C1F2', '#C4E1F2', '#FFFFFF'],
+  breadcrumbs: [{
+    link: '#',
+    title: 'Erika Kishi'
+  }],
+  skills: [
+    { skill: 'Back-end Development', competency: 95 },
+    { skill: 'Front-end Development', competency: 70 },
+    { skill: 'API Integration', competency: 80 },
+    { skill: 'AWS Architecture', competency: 35 },
+    { skill: 'Design', competency: 50 },
+  ],
+  projects: [
+    {
+      project: 'Fusion Entertainment',
+      folderName: 'FusionEntertainment',
+      skills: [
+        'Back-end Development',
+        'API Integration',
+      ],
+      technologies: ['Craft CMS'],
+      link: '/projects/fusion',
+    },
+    {
+      project: 'Magnity Web Application',
+      folderName: 'MagnityApp',
+      skills: [
+        'Front-end Development',
+        'Back-end Development',
+        'API Integration',
+        'AWS Architecture',
+        'Design'
+      ],
+      technologies: ['Laravel', 'Vue.js', 'Sketch', 'Amazon Web Services'],
+      link: '/projects/magnity',
+    },
+    {
+      project: 'Magnity Marketing Website',
+      folderName: 'MagnityWebsite',
+      skills: [
+        'Front-end Development',
+        'Design',
+      ],
+      technologies: ['Laravel', 'Sketch', 'Amazon Web Services'],
+      link: '/projects/magnity-marketing',
+    },
+    {
+      project: 'Boardingware',
+      folderName: 'Boardingware',
+      skills: [
+        'Front-end Development',
+      ],
+      technologies: ['Sass', 'JADE', 'BEM'],
+      link: '/projects/boardingware',
+    },
+    {
+      project: 'Online Portfolio',
+      folderName: 'Boardingware',
+      skills: [
+        'Front-end Development',
+        'Design',
+      ],
+      technologies: ['React', 'Sketch'],
+      link: '/projects/portfolio',
+    },
+    {
+      project: 'LJ Hooker NZ',
+      folderName: 'Boardingware',
+      skills: [
+        'Front-end Development',
+        'Back-end Development',
+        'API Integration',
+      ],
+      technologies: ['Drupal 7'],
+      link: '/projects/ljhooker',
+    },
+    {
+      project: 'Pasifika TV',
+      folderName: 'Boardingware',
+      skills: [
+        'Front-end Development',
+        'Back-end Development',
+      ],
+      technologies: ['Drupal 7'],
+      link: '/projects/pasifikatv',
+    },
+  ],
+  architecture: [
+    {
+      project: 'Portfolio',
+      folderName: 'Boardingware',
+      skills: [
+        'Adobe Photoshop',
+        'Adobe Illustrator',
+        'Rhinoceros 3d',
+        'AutoCad',
+        'Adobe Indesign'
+      ],
+      technologies: ['Adobe Photoshop', 'Adobe Illustrator', 'Rhinoceros 3d', '3DS Max', 'AutoCad', 'Adobe InDesign'],
+      link: '/architecture/portfolio',
+    },
+    {
+      project: 'Ironbank Article',
+      folderName: 'Boardingware',
+      skills: [
+        'Adobe Illustrator',
+        'Adobe Indesign'
+      ],
+      technologies: ['Adobe Illustrator', 'Adobe InDesign'],
+      link: '/architecture/ironbank',
+    }
+  ],
+}
+
 export const MAGNITY_APP = {
   name: 'Magnity Application',
   duration: '2018 - 2019',
@@ -760,11 +876,7 @@ export const ARCHITECTURAL_PORTFOLIO = {
       'This portfolio is a culmination of projects undertaken during my studies. All projects starkly differ, therefore I hope you can see my experimentation with different process, tools and ultimately see my journey in learning how to design and how to be creative.',
       '<a href="https://dog1qqresop9s.cloudfront.net/ZKzYxRPszTLVZeq6HchM-ArchitecturalPortfolio.pdf" download>Download Portfolio</a>'
     ],
-    tags: [
-      'Front-end Development',
-      'Design',
-      'Version Control',
-    ],
+    tags: ['Design'],
     icons: [
       'Adobe Photoshop', 'Adobe Illustrator', 'Rhinoceros 3d', '3DS Max', 'AutoCad', 'Adobe InDesign',
     ]
@@ -814,11 +926,7 @@ export const IRONBANK = {
       'Through research and interviewing the architect, it was interesting to hear the process of how the building was realised and the intricate relationship between design and engineering.',
       '<a href="https://dog1qqresop9s.cloudfront.net/qdjWVGpmftwWBVm2ND3w-Ironbank.pdf" download>Download Article</a>'
     ],
-    tags: [
-      'Front-end Development',
-      'Design',
-      'Version Control',
-    ],
+    tags: ['Architectural Technology'],
     icons: [
       'Adobe Illustrator',
       'Adobe InDesign'
