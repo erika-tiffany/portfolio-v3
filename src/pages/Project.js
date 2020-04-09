@@ -21,7 +21,8 @@ export const Project = (props) => {
                   title={ props.name }
                   breadcrumbs={ props.breadcrumbs }>
         <Duration duration={ props.duration }/>
-        <LanguageList languages={ props.languages } colors={ colors }/>
+        <LanguageList languages={ props.languages } 
+                      colors={ colors }/>
       </PageHeader>
 
       <Section 
@@ -53,8 +54,8 @@ export const Project = (props) => {
             render={ visible => (
               <>
                 <SectionHeader subheading={ props.development.subheading }
-                              heading={ props.development.heading }
-                              visible={ visible } />
+                               heading={ props.development.heading }
+                               visible={ visible } />
                 <div>
                   <Text text={ props.development.text } />
                   <Breakdown facets={ props.development.facets } />
@@ -71,8 +72,8 @@ export const Project = (props) => {
             render={ visible => (
               <>
                 <SectionHeader subheading={ props.cloud.subheading }
-                              heading={ props.cloud.heading }
-                              visible={ visible } />
+                               heading={ props.cloud.heading }
+                               visible={ visible } />
                 <div>
                   <Text text={ props.cloud.text } />
                   <Breakdown facets={ props.cloud.facets } />

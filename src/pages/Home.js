@@ -27,7 +27,9 @@ export const Home = (props) => {
             <SectionHeader subheading="Hi, I'm a Kiwi that enjoys dipping my feet in all aspects of development."
                            heading="What I Can Do"
                            visible={ visible } />
-            <SkillsList skills={ props.skills } visible={ visible } colors={ colors } />
+            <SkillsList skills={ props.skills } 
+                        visible={ visible } 
+                        colors={ colors } />
           </>
         )} 
       />
