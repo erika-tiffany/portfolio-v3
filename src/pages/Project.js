@@ -1,4 +1,5 @@
 import React from 'react';
+import { slice } from 'lodash';
 import { PageHeader } from '../components/PageHeader';
 import { Duration } from '../components/Project/Duration';
 import { LanguageList } from '../components/Languages/LanguageList';
@@ -79,7 +80,7 @@ export const Project = (props) => {
         : <></>
       }
 
-      <Footer />
+      <Footer colors={ slice(props.stackColors, 0, 3) }/>
     </>
   );
 }

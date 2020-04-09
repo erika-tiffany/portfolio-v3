@@ -183,7 +183,7 @@ export const Home = (props) => {
         </>
       )} />
 
-      <Footer />
+      <Footer colors={ slice(stackColors, 0, 3) }/>
     </>
   );
 }

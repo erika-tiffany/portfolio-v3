@@ -8,7 +8,7 @@ export const Footer = (props) => {
       <SectionHeader subheading="I can help."
                      heading="Drop me a line"
                      visible={ true } />
-      <ContactLinksList className=" stack-bottom-anchor"/>
+      <ContactLinksList className=" stack-bottom-anchor" colors={ props.colors }/>
     </footer>
   );
 }
