@@ -11,13 +11,13 @@ export const SingleStack = (props) => {
       const timer = setTimeout(() => {
         setAnimated(true);
         // if white, then last element, therefore perform stack finished call
-        if (props.color === 'base-white') props.stackFinished();
+        if (props.color === '#FFFFFF') props.stackFinished();
       }, props.stackId * 250);
       return () => clearTimeout(timer);
     }
   }, [animated, props]);
 
   return (
-    <div className={ (animated ? 'animated fadeIn' : 'hidden') + " stack--" + props.color }></div>
+    <div className={ animated ? 'animated fadeIn' : 'hidden' } style={ { backgroundColor: props.color } }></div>
   );
 }
