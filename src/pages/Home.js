@@ -8,12 +8,16 @@ import { Section } from '../components/Section/Section';
 import { ProjectAbstract } from '../components/ProjectAbstract/Abstract';
 import { Link } from 'react-router-dom';
 
+// const stackColors = [
+//   'base-yellow', 
+//   'base-blue', 
+//   'base-light-blue',
+//   'base-white',
+// ];
+
 const stackColors = [
-  'base-yellow', 
-  'base-blue', 
-  'base-light-blue',
-  'base-white',
-];
+  '#F2CD88', '#88C1F2', '#C4E1F2', '#FFFFFF'
+]
 
 const breadcrumbs = [{
   link: '#',
@@ -37,6 +41,7 @@ const projects = [
       'API Integration',
     ],
     technologies: ['Craft CMS'],
+    link: '/projects/fusion',
   },
   {
     project: 'Magnity Web Application',
@@ -49,6 +54,7 @@ const projects = [
       'Design'
     ],
     technologies: ['Laravel', 'Vue.js', 'Sketch', 'Amazon Web Services'],
+    link: '/projects/magnity',
   },
   {
     project: 'Magnity Marketing Website',
@@ -58,6 +64,7 @@ const projects = [
       'Design',
     ],
     technologies: ['Laravel', 'Sketch', 'Amazon Web Services'],
+    link: '/projects/magnity-marketing',
   },
   {
     project: 'Boardingware',
@@ -66,6 +73,17 @@ const projects = [
       'Front-end Development',
     ],
     technologies: ['Sass', 'JADE', 'BEM'],
+    link: '/projects/boardingware',
+  },
+  {
+    project: 'Online Portfolio',
+    folderName: 'Boardingware',
+    skills: [
+      'Front-end Development',
+      'Design',
+    ],
+    technologies: ['React', 'Sketch'],
+    link: '/projects/portfolio',
   },
   {
     project: 'LJ Hooker NZ',
@@ -76,6 +94,7 @@ const projects = [
       'API Integration',
     ],
     technologies: ['Drupal 7'],
+    link: '/projects/ljhooker',
   },
   {
     project: 'Pasifika TV',
@@ -85,7 +104,34 @@ const projects = [
       'Back-end Development',
     ],
     technologies: ['Drupal 7'],
+    link: '/projects/pasifikatv',
   },
+];
+
+const architecture = [
+  {
+    project: 'Portfolio',
+    folderName: 'Boardingware',
+    skills: [
+      'Adobe Photoshop',
+      'Adobe Illustrator',
+      'Rhinoceros 3d',
+      'AutoCad',
+      'Adobe Indesign'
+    ],
+    technologies: ['Adobe Photoshop', 'Adobe Illustrator', 'Rhinoceros 3d', '3DS Max', 'AutoCad', 'Adobe InDesign'],
+    link: '/architecture/portfolio',
+  },
+  {
+    project: 'Ironbank Article',
+    folderName: 'Boardingware',
+    skills: [
+      'Adobe Illustrator',
+      'Adobe Indesign'
+    ],
+    technologies: ['Adobe Illustrator', 'Adobe InDesign'],
+    link: '/architecture/ironbank',
+  }
 ]
 
 export const Home = (props) => {
@@ -109,7 +155,7 @@ export const Home = (props) => {
         )} 
       />
 
-      <Section render={ visible => (
+      <Section className="section--margin-bottom" render={ visible => (
         <>
           <SectionHeader subheading="What I've worked on."
                          heading="Selected Works & Projects"
@@ -117,7 +163,24 @@ export const Home = (props) => {
           <ul className="reset-list" id="projects">
             { projects.map((project, key) => (
               <li role="article" key={ key }>
-                <Link to="/magnity">
+                <Link to={ project.link } >
+                  <ProjectAbstract {...project} />
+                </Link>
+              </li>
+            )) }
+          </ul>
+        </>
+      )} />
+
+      <Section render={ visible => (
+        <>
+          <SectionHeader subheading="Design Background."
+                         heading="Architecture"
+                         visible={ visible } />
+          <ul className="reset-list" id="architecture">
+            { architecture.map((project, key) => (
+              <li role="article" key={ key }>
+                <Link to={ project.link } >
                   <ProjectAbstract {...project} />
                 </Link>
               </li>
