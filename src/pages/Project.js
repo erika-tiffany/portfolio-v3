@@ -37,25 +37,29 @@ export const Project = (props) => {
           </>
       )} />
 
-      <section className="section section--margin-bottom">
+      <section className={ 'section' + (props.development || props.cloud ? ' section--margin-bottom' : '') }>
         { props.figures.map((fig, key) => (
           <Figure key={ key } { ...fig } />
         )) }
       </section>
 
-      <Section 
-        className="section--row section--margin-bottom" 
-        render={ visible => (
-          <>
-            <SectionHeader subheading={ props.development.subheading }
-                           heading={ props.development.heading }
-                           visible={ visible } />
-            <div>
-              <Text text={ props.development.text } />
-              <Breakdown facets={ props.development.facets } />
-            </div>
-          </>
-      )} />
+      {
+        (props.development)
+        ? <Section 
+            className="section--row section--margin-bottom" 
+            render={ visible => (
+              <>
+                <SectionHeader subheading={ props.development.subheading }
+                              heading={ props.development.heading }
+                              visible={ visible } />
+                <div>
+                  <Text text={ props.development.text } />
+                  <Breakdown facets={ props.development.facets } />
+                </div>
+              </>
+          )} />
+        : <></>
+      }
 
       {
         (props.cloud)
