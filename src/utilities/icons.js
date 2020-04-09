@@ -1,7 +1,3 @@
-import { ReactComponent as Resume } from '../icons/resume.svg';
-import { ReactComponent as Email } from '../icons/email.svg';
-import { ReactComponent as LinkedIn } from '../icons/linkedin.svg';
-import { ReactComponent as LocationNz } from '../icons/new-zealand.svg';
 import { ReactComponent as Php } from '../icons/php.svg';
 import { ReactComponent as JavaScript } from '../icons/javascript.svg';
 import { ReactComponent as Css } from '../icons/css3.svg';
@@ -116,10 +112,6 @@ export function findIcon(title) {
     { svg: JavaScript, title: 'JavaScript' },
     { svg: Css, title: 'CSS3' },
     { svg: Html, title: 'HTML5' },
-    { svg: Resume, title: 'Resume' },
-    { svg: Email, title: 'Email' },
-    { svg: LinkedIn, title: 'LinkedIn' },
-    { svg: LocationNz, title: 'New Zealand' },
   ];
 
   const logo = find(LOGOS,['title', title]);
