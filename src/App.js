@@ -8,6 +8,7 @@ import { Home } from './pages/Home';
 import { Project } from './pages/Project';
 import { ScrollToTop } from './components/ScrollToTop';
 import { 
+  HOME,
   MAGNITY_APP, 
   MAGNITY_WEB, 
   BOARDINGWARE, 
@@ -16,7 +17,8 @@ import {
   PASIFIKA_TV, 
   PORTFOLIO,
   ARCHITECTURAL_PORTFOLIO,
-  IRONBANK } from './utilities/projects';
+  IRONBANK 
+} from './utilities/pages';
 
 function App() {
   return (
@@ -61,7 +63,7 @@ function App() {
           </Route>
           <Route path="/">
             <ScrollToTop />
-            <Home />
+            <Home { ...HOME }/>
           </Route>
         </Switch>
       </div>

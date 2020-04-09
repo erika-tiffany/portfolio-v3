@@ -13,13 +13,15 @@ import { FacetList as Breakdown } from '../components/Project/Breakdown/FacetLis
 import { Figure } from '../components/Project/Figure';
 
 export const Project = (props) => {
+  const colors = slice(props.stackColors, 0, 3);
+
   return (
     <>
       <PageHeader stackColors={ props.stackColors }
                   title={ props.name }
                   breadcrumbs={ props.breadcrumbs }>
         <Duration duration={ props.duration }/>
-        <LanguageList languages={ props.languages } colors={ slice(props.stackColors, 0, 3) }/>
+        <LanguageList languages={ props.languages } colors={ colors }/>
       </PageHeader>
 
       <Section 
@@ -80,7 +82,7 @@ export const Project = (props) => {
         : <></>
       }
 
-      <Footer colors={ slice(props.stackColors, 0, 3) }/>
+      <Footer colors={ colors }/>
     </>
   );
 }
