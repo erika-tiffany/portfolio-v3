@@ -19,7 +19,7 @@ export const Project = (props) => {
                   title={ props.name }
                   breadcrumbs={ props.breadcrumbs }>
         <Duration duration={ props.duration }/>
-        <LanguageList languages={ props.languages }/>
+        <LanguageList languages={ props.languages } colors={ slice(props.stackColors, 0, 3) }/>
       </PageHeader>
 
       <Section 
