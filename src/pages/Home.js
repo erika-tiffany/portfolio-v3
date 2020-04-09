@@ -1,4 +1,5 @@
 import React from 'react';
+import { slice } from 'lodash';
 import { PageHeader } from '../components/PageHeader';
 import { Footer } from '../components/Footer';
 import { ContactLinksList } from '../components/ContactLinks/ContactLinksList';
@@ -7,13 +8,6 @@ import { Header as SectionHeader } from '../components/Section/Header';
 import { Section } from '../components/Section/Section';
 import { ProjectAbstract } from '../components/ProjectAbstract/Abstract';
 import { Link } from 'react-router-dom';
-
-// const stackColors = [
-//   'base-yellow', 
-//   'base-blue', 
-//   'base-light-blue',
-//   'base-white',
-// ];
 
 const stackColors = [
   '#F2CD88', '#88C1F2', '#C4E1F2', '#FFFFFF'
@@ -140,7 +134,7 @@ export const Home = (props) => {
       <PageHeader stackColors={ stackColors }
                   title="Full Stack Developer & Designer"
                   breadcrumbs={ breadcrumbs }>
-        <ContactLinksList />
+        <ContactLinksList colors={ slice(stackColors, 0, 3) }/>
       </PageHeader>
 
       <Section 
@@ -150,7 +144,7 @@ export const Home = (props) => {
             <SectionHeader subheading="Hi, I'm a Kiwi that enjoys dipping my feet in all aspects of development."
                            heading="What I Can Do"
                            visible={ visible } />
-            <SkillsList skills={ skills } visible={ visible } />
+            <SkillsList skills={ skills } visible={ visible } colors={ slice(stackColors, 0, 3) } />
           </>
         )} 
       />

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Skill } from './Skill';
 import { sample } from 'lodash';
-import { HOMEPAGE_COLORS } from '../../utilities/constants';
 
 export const SkillsList = (props) => {
   return (
@@ -9,7 +8,7 @@ export const SkillsList = (props) => {
       { props.skills.map((skill, key) => (
         <Skill key={ key } {...skill} 
                skillId={ key }
-               color={ sample( HOMEPAGE_COLORS ) }
+               color={ sample( props.colors ) }
                animate={ props.visible } />
       )) }
     </ul>

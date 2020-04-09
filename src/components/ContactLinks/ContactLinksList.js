@@ -1,7 +1,7 @@
 import React from 'react';
 import { sample } from 'lodash';
 import { ContactLink } from './ContactLink';
-import { CONTACT_LINKS, HOMEPAGE_COLORS } from '../../utilities/constants';
+import { CONTACT_LINKS } from '../../utilities/constants';
 
 export const ContactLinksList = (props) => {
   return (
@@ -9,7 +9,7 @@ export const ContactLinksList = (props) => {
       { CONTACT_LINKS.map((link, key) => (
         <ContactLink {...link}
             key={ key } 
-            hoverColor={ sample( HOMEPAGE_COLORS ) }/>
+            hoverColor={ sample(props.colors) }/>
       )) }
     </nav>
   );
