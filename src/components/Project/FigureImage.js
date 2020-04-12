@@ -3,7 +3,7 @@ import LazyLoad from 'react-lazyload';
 
 export const FigureImage = (props) => {
   const container = useRef(null);
-  const height = useWidthResize(container);
+  const height = useWidthResize(container, props.auto);
 
   return (
     <div className="project-figure__container" 
@@ -16,14 +16,17 @@ export const FigureImage = (props) => {
   );
 }
 
-function useWidthResize(container) {
+function useWidthResize(container, auto) {
+  const defaultHeight = auto ? 'auto' : 0;
   const [width, setWidth] = useState(0);
-  const [height, setHeight] = useState(0);
+  const [height, setHeight] = useState(defaultHeight);
 
   useEffect(() => {
     function handleHeightChange() {
       const currentWidth = container.current.offsetWidth;
       if (currentWidth !== width) setWidth(currentWidth);
+
+      if (defaultHeight === 'auto') return;
 
       const newHeight = (currentWidth / 16) * 9;
       if (newHeight === height) return;

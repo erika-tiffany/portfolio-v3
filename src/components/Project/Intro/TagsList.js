@@ -7,10 +7,6 @@ export const TagsList = (props) => {
   const [finishedAnimating, setFinishedAnimating] = useState(false);
 
   function handleVisibilityChange(isVisible) {
-    // if visible is already set to true, we don't care anymore
-    // because it means the section has already been viewed
-    // and therefore the content is already in view
-    if (visible === true) return;
     setVisible(isVisible);
   }
 
@@ -20,7 +16,7 @@ export const TagsList = (props) => {
   }
 
   return (
-    <VisibilitySensor onChange={ handleVisibilityChange }>
+    <VisibilitySensor active={ !visible } onChange={ handleVisibilityChange }>
       <>
         <ul className="project-intro__tags">
           { props.tags.map((tag, key) => (
