@@ -41,11 +41,15 @@ export const Project = (props) => {
           </>
       )} />
 
-      <section className={ 'section' + (props.development || props.cloud ? ' section--margin-bottom' : '') }>
-        { props.figures.map((fig, key) => (
-          <Figure key={ key } { ...fig } />
-        )) }
-      </section>
+      {
+        (props.figures)
+        ? <section className={ 'section' + (props.development || props.cloud ? ' section--margin-bottom' : '') }>
+            { props.figures.map((fig, key) => (
+              <Figure key={ key } { ...fig } />
+            )) }
+          </section>
+        : <></>
+      }
 
       {
         (props.development)
@@ -57,7 +61,11 @@ export const Project = (props) => {
                                heading={ props.development.heading }
                                visible={ visible } />
                 <div>
-                  <Text text={ props.development.text } />
+                  {
+                    (props.development.text)
+                    ? <Text text={ props.development.text } />
+                    : <></>
+                  }
                   <Breakdown facets={ props.development.facets } />
                 </div>
               </>
@@ -75,7 +83,11 @@ export const Project = (props) => {
                                heading={ props.cloud.heading }
                                visible={ visible } />
                 <div>
-                  <Text text={ props.cloud.text } />
+                  {
+                    (props.cloud.text)
+                    ? <Text text={ props.cloud.text } />
+                    : <></>
+                  }
                   <Breakdown facets={ props.cloud.facets } />
                 </div>
               </>

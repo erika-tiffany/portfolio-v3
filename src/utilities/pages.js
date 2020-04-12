@@ -37,6 +37,16 @@ export const HOME = {
       link: '/projects/magnity',
     },
     {
+      project: 'Online Portfolio',
+      folderName: 'OnlinePortfolio',
+      skills: [
+        'Front-end Development',
+        'Design',
+      ],
+      technologies: ['React', 'Sketch'],
+      link: '/projects/portfolio',
+    },
+    {
       project: 'Magnity Marketing Website',
       folderName: 'MagnityWebsite',
       skills: [
@@ -56,18 +66,8 @@ export const HOME = {
       link: '/projects/boardingware',
     },
     {
-      project: 'Online Portfolio',
-      folderName: 'Boardingware',
-      skills: [
-        'Front-end Development',
-        'Design',
-      ],
-      technologies: ['React', 'Sketch'],
-      link: '/projects/portfolio',
-    },
-    {
       project: 'LJ Hooker NZ',
-      folderName: 'Boardingware',
+      folderName: 'LJH',
       skills: [
         'Front-end Development',
         'Back-end Development',
@@ -78,7 +78,7 @@ export const HOME = {
     },
     {
       project: 'Pasifika TV',
-      folderName: 'Boardingware',
+      folderName: 'PasifikaTV',
       skills: [
         'Front-end Development',
         'Back-end Development',
@@ -89,8 +89,8 @@ export const HOME = {
   ],
   architecture: [
     {
-      project: 'Portfolio',
-      folderName: 'Boardingware',
+      project: 'Architectural Portfolio',
+      folderName: 'ArchitecturalPortfolio',
       skills: [
         'Adobe Photoshop',
         'Adobe Illustrator',
@@ -103,7 +103,7 @@ export const HOME = {
     },
     {
       project: 'Ironbank Article',
-      folderName: 'Boardingware',
+      folderName: 'Ironbank',
       skills: [
         'Adobe Illustrator',
         'Adobe Indesign'
@@ -130,11 +130,11 @@ export const MAGNITY_APP = {
     heading: 'Personalised Digest',
     subheading: 'A Brief Overview.',
     text: [
-      '<a href="//www.magnity.io" target="_blank">Magnity</a> was a project where I was involved in the full life cycle of the web application including design, front-end development, back-end development, cloud architecture and deployment.',
-      'After the initial decision to use Laravel was made, many of the other development/architectural decisions fell into place. There were many opportunities to use new technologies, new methodologies and refine development processes to add to my pool of skills.',
-      'I believe one of the biggest challenges/learning curves with this project was architecting and deploying Magnity into an AWS architected cloud environment. The decision to use AWS was made because of the sheer variety and reliability of services available. It also provided a streamlined set up for the specific type of architecture Magnity which was offloading process intensive jobs via a message queue system to a different environment from the user facing web environment within a secure VPC.',
-      'Through research and testing, I was able to architect and implement the web & worker tier using many of the AWS services. It was rewarding to learn not only how to implement these services, but how they work together as a cohesive unit, how to optimise each service and - just like most aspects of web development - the nuances that were not initially apparent.',
-      'The web application itself required a lot of API integration, webhook integration, tasks scheduling and a strong front-end, via Vue.js, to provide the appropriate interface to build such a custom digest.'
+      '<a href="//www.magnity.io" target="_blank" style="color:#343057">Magnity</a> was a project where I was involved in the full life cycle of the web application including design, front-end development, back-end development, cloud architecture and deployment.',
+      'After the initial decision to use Laravel was made, many of the other development/architectural decisions fell into place. There were opportunities to use new technologies, new methodologies and refine development processes to add to my pool of skills.',
+      'One of the biggest challenges/learning curves with this project was architecting and deploying Magnity into an AWS architected cloud environment. The decision to use AWS was made because of the sheer variety and reliability of services available. It also provided a streamlined set up for the specific type of architecture Magnity required which was offloading process intensive jobs via a message queue system to a different environment from the user facing web environment within a secure VPC.',
+      'Through research and testing, I was able to architect and implement the web & worker tier using AWS. It was rewarding to learn not only how to implement these services, but how they work together as a cohesive unit, how to optimise each service and - just like most aspects of web development - the nuances that were not initially obvious.',
+      'The web application itself required API integration, webhook integration, tasks scheduling and a strong front-end, via Vue.js, to provide the appropriate interface to build customised digests.'
     ],
     tags: [
       'Back-end Development',
@@ -183,34 +183,49 @@ export const MAGNITY_APP = {
         icons: ['Laravel'],
         title: 'Laravel',
         text: [
-          'Laravel was an easy choice for Magnity as it provided the following:',
-          '<ul><li>Logical implementation of the MVC pattern.</li><li>A vast pool of libraries, incredible documentation + community, which was a major plus when it came to deploying a Laravel application in AWS Elastic Beanstalk.</li><li>Streamlined non-business logic specific functionality, for example, integrating with Stripe as a payment gateway via Cashier, authentication etc...</li><li>Easy use of webpack and compilation of front-end assets via Laravel Mix.</li></ul>',
+          'Laravel was an easy choice for Magnity as it provided the following',
+          '<ul><li>Logical implementation of the MVC pattern</li><li>A vast pool of libraries, incredible documentation + community, which was a major plus when it came to deploying a Laravel application in AWS Elastic Beanstalk</li><li>Streamlined non-business logic specific functionality, for example, integrating with Stripe as a payment gateway via Cashier, authentication etc...</li><li>Easy use of webpack and compilation of front-end assets via Laravel Mix</li></ul>',
           'I was also able to improve my skills with task scheduling and working with a queue system within the Laravel ecosystem as this was a big focus within the project.'
-        ]
-      },
-      {
-        icons: ['Sass'],
-        title: 'Sass',
-        text: [
-          'Sass is already ready-to-use in Laravel & compiled via Laravel-mix.',
-          'It is a stylesheet language that helped implement organisation & structure to Magnity’s CSS code. In combination with the BEM methodology, it was also easy to maintain consistency and reusability throughout.'
         ]
       },
       {
         icons: ['Vue.js'],
         title: 'Vue.js',
         text: [
-          'Vue was the front-end framework that shined in Magnity’s digest builder. Using a JavaScript framework meant that we could achieve what was set out with the digest builder design. This being a highly interactive experience that served and updated data asynchronously via an organised set of components.',
-          'We also had to integrate with a few existing libraries for key functionality that meant we did not have to reinvent the wheel via npm and then built via webpack. This included a library that allowed a user to move a vue component around the page (dragging), a wysiwyg and also integration with the Unsplash API so users can search the Unsplash pool of images.',
-          'A lot of the challenges with this phase of development involved the interaction of components within a page, as they are free to move wherever within the page container (with content such as text, graphs, metrics) while simultaneously asynchronously updating information in the back-end. There was also significant challenges surrounding integrating a wysiwyg for the text component as it also included uploading files, images, and adding intercom tags, while being a secure/safe html editor.'
+          'Vue was the front-end framework that shined in Magnity’s digest builder. Using a JavaScript framework meant that I could achieve what was set out with the digest builder design. This being a highly interactive experience that served and updated data asynchronously via an organised set of components.',
+          'Integration with a few existing libraries for key functionality meant that we did not have to reinvent the wheel via npm and then built via webpack. This included a library that allowed a user to move a vue component around the page (dragging), a wysiwyg and also integration with the Unsplash API so users can search the Unsplash pool of images.',
+          'A lot of the challenges with this phase of development involved the interaction of components within a page, as they are free to move wherever within the page container (with content such as text, graphs, metrics) while simultaneously asynchronously updating information in the back-end. There were also significant challenges surrounding integrating a wysiwyg for the text component as it also included uploading files, images, and adding intercom tags, while being a secure/safe html editor.'
         ]
       },
       {
-        icons: ['Intercom', 'Google Analytics', 'Bugsnag', 'Stripe'],
-        title: 'API Integration & Webhooks',
+        icons: ['Sass', 'BEM'],
+        title: 'Sass/BEM',
         text: [
-          'Magnity required integration with a few API’s including Intercom, Stripe & Bugsnag. Whether we required data or pushed data to other services, API integration was at the forefront of building Magnity.',
-          'Intercom was the most important integration as user’s set up their Magnity account through their Intercom account, requiring authentication handling and a large amount of Intercom data processing.'
+          'Sass is ready-to-use in Laravel and compiled via Laravel-mix, therefore was an easy choice. Sass allowed for clear organisation and structure to Magnity’s CSS styles - which can easily become unruly. We also used Sass in combination with BEM methodology, to further enhance readability, re-usability and consistency throughout Magnity’s HTML and CSS.'
+        ]
+      },
+      {
+        icons: ['Intercom', 'Google Analytics', 'Bugsnag', 'Stripe', 'Unsplash', 'TinyPng'],
+        title: 'API Integration',
+        text: [
+          'Magnity integrated with API’s including Intercom, Unsplash, TinyPng, Stripe and Bugsnag. Whether we required data or pushed data to other services, API integration was at the forefront of building Magnity.',
+          'Intercom was the most pivotal API integration, as Magnity created custom digests based on user’s Intercom event data. This involved authentication handling and importing and processing a large amount of data.',
+          'There were also peripheral API integrations such as using Stripe as the payment gateway or using Bugsnag to track errors that occur - this was especially important with queue messages and cron jobs because errors that occurred in the worker tier were in a way ‘silent’,  therefore, a lot more difficult to track down and debug.'
+        ]
+      },
+      {
+        icons: ['Intercom', 'Stripe', 'Ngrok'],
+        title: 'Webhooks',
+        text: [
+          'Magnity integrates with webhooks provided by Intercom and Stripe. This is so we can fire off certain jobs off certain events triggered in corresponding applications.',
+          'One particularly useful tool I found testing and developing with webhooks is Ngrok. Ngrok allows you to tunnel webhook test responses to local development servers and provides an interface for you to clearly see how the responses are coming in, rather than testing everything straight on a staging server first.'
+        ]
+      },
+      {
+        icons: ['Amazon Web Services'],
+        title: 'Message Queue',
+        text: [
+          'The message queue provided communication between two building blocks i.e. the web and worker Elastic Beanstalk environments. With the nature of Magnity, we could see the potential for spikes in workload with heavy importing of data periodically. Therefore, Magnity could send jobs to the message queue which transported these jobs but also acted as a buffer, temporarily holding jobs while other jobs were being processed.'
         ]
       },
       {
@@ -227,8 +242,8 @@ export const MAGNITY_APP = {
         title: 'Version Control',
         text: [
           'As for most projects, Magnity required a version control system for their code base - hence the use of Git.',
-          'We researched solutions that others have used for managing code bases via Git & was able to architect one that worked for Magnity.',
-          'This was important when it came to the web/worker environment structure as it influenced the ease of managing each tiers code base.',
+          'I researched solutions that others have used for managing code bases via Git & was able to architect one that worked for Magnity.',
+          'This was important when it came to the web/worker environment structure as it influenced the ease of managing each tiers code base.'
         ]
       }
     ]
@@ -269,15 +284,16 @@ export const MAGNITY_APP = {
         icons: ['AWS ElastiCache', 'Redis'],
         title: 'ElastiCache',
         text: [
-          'Magnity required integration with a few API’s including Intercom, Stripe & Bugsnag. Whether we required data or pushed data to other services, API integration was at the forefront of building Magnity.',
-          'Intercom was the most important integration as user’s set up their Magnity account through their Intercom account, requiring authentication handling and a large amount of Intercom data processing.'
+          'ElastiCache(caching-as-a-service) offered Magnity solutions for it’s caching and session management through using Redis engines.',
+          'Because we were using Elastic Beanstalk, and taking advantage of EB’s autoscaling where servers will be provisioned and destroyed based on traffic load, we required a service where all the instances could read and write from the same cache. Therefore Redis caching via ElastiCache was a straightforward service to integrate with our existing architecture.',
+          'We also required distributed session management, therefore opted to use Redis engines again - using cache for session management.'
         ]
       },
       {
         icons: ['AWS SQS'],
         title: 'Simple Queue Service (SQS)',
         text: [
-          'Decoupling the web application from resource intensive jobs was pivotal in not hammering the application server, which would ultimately improve the user’s experience. AWS SQS is a message queue service that was pivotal in connecting the two environments. The web environment sends a message to the given SQS queue, who makes it available for the worker environment to pick up and process.',
+          'Decoupling the web application from resource intensive jobs was pivotal in not hammering the application server, which would ultimately improve the user’s experience. AWS SQS is a message queue service that was pivotal in connecting the two environments. The web environment sends a message to the given SQS queue, who makes it available for the worker environment to pick up and process.', 
           'The way that SQS works differs from Laravel’s standard queue job flow, and therefore required a bit of work to smooth out the nuances with integrating SQS with Laravle. Magnity also used a non FIFO queue (First In First Out), which created a few difficult scenarios especially surrounding mass import of data.'
         ]
       },
@@ -302,22 +318,32 @@ export const MAGNITY_APP = {
   figures: [
     {
       heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
+      subheading: 'Dashboard of user’s published, live and archived digests.',
+      path: '/images/Projects/MagnityApp/002_w-1000px_compressed.png',
     },
     {
       heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
+      subheading: 'Target the intended audience for a digest via Intercom segments and tags.',
+      path: '/images/Projects/MagnityApp/003_w-1000px_compressed.png',
     },
     {
       heading: 'Digest Builder - Design',
-      subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
+      subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data.',
+      path: '/images/Projects/MagnityApp/004_w-1000px_compressed.png',
     },
     {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
+      heading: 'Digest Builder - Channel',
+      subheading: 'Tailor how to send digest via Intercom’s in-app messenger.',
+      path: '/images/Projects/MagnityApp/005_w-1000px_compressed.png',
+    },
+    {
+      heading: 'Published Digest',
+      subheading: 'Personalised tailored digests for each user.',
+      path: '/images/Projects/MagnityApp/006_w-1000px_compressed.png',
+    },
+    {
+      heading: 'Digest Summary',
+      subheading: 'Display engagement and feedback with a real time overview of how each digest is performing.',
       path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
     },
   ]
@@ -339,9 +365,9 @@ export const MAGNITY_WEB = {
     heading: 'Marketing Digests for Intercom',
     subheading: 'A Brief Overview.',
     text: [
-      'This <a href="//www.magnity.io" target="_blank">project</a> was another that I was responsible for the whole process - design, development and deployment.',
-      'I was able to develop my design skills further with this project and improve my knowledge and familiarity with Sketch. Coming from a background of Adobe suite, I found Sketch very intuitive and allowed for quicker prototyping and design for websites more than say Adobe Fireworks.',
-      'The main aims of the website was to communicate the product clearly and succinctly, have in-built best practices for SEO and fast loading speeds. This meant a variety of solutions such as using semantic html tags, images with meaningful alternative test, loading page on scroll, loading images when being viewed etc… This meant a combination of thoughtful layout, smart use of loading methods, use of javascript, and using CDN’s to use cache images.'
+      'I was involved and spearheaded with the design, development and deployment of this <a href="//www.magnity.io" target="_blank">project</a>.',
+      'I was able to develop my design skills further with this project and improve my knowledge and familiarity with Sketch. Coming from a background of Adobe suite, I found Sketch very intuitive and allowed for quicker prototyping and design for websites more than other alternatives.',
+      'The main aims of the website was to communicate the product clearly and succinctly, have in-built best practices for SEO and fast loading speeds. This meant a variety of solutions such as using semantic html tags, images with meaningful alternative tests, loading page on scroll, loading images when being viewed etc… This meant a combination of thoughtful layout, smart use of loading methods, use of javascript, and using CDN to cache images.'
     ],
     tags: [
       'Back-end Development',
@@ -380,7 +406,7 @@ export const MAGNITY_WEB = {
         ]
       },
       {
-        icons: ['Google Page Speed Insights', 'JavaScript'],
+        icons: ['Google Page Speed Insights'],
         title: 'Optimize Site Loading',
         text: [
           'With marketing websites, generally, the faster a page loads, the more likely the user will stay on the page and overall have a better experience with the website. Therefore it was important to actively increase and improve site loading for Magnity’s marketing website.',
@@ -392,24 +418,22 @@ export const MAGNITY_WEB = {
   },
   figures: [
     {
-      heading: 'Digests Dashboard',
+      heading: 'Long one',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
+      path: '/images/Projects/MagnityWebsite/002_w-1000px_compressed.png',
+      auto: true,
     },
     {
       heading: 'Digest Builder - Audience',
       subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
+      path: '/images/Projects/MagnityWebsite/003_w-1000px_compressed.png',
+      auto: true,
     },
     {
       heading: 'Digest Builder - Design',
       subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
-    },
-    {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
+      path: '/images/Projects/MagnityWebsite/004_w-1000px_compressed.png',
+      auto: true,
     },
   ]
 }
@@ -430,10 +454,9 @@ export const BOARDINGWARE = {
     heading: 'The New Standard in Boarding',
     subheading: 'A Brief Overview.',
     text: [
-      '<a href="//www.boardingware.com" target="_blank">Boardingware</a> is a boarding school management system that spans across multiple platforms and applications. I was contracted to implement a major redesign of their web application. This mainly involved building html structure via Jade templates, CSS and a touch of javascript for their existing platform.',
-      'The main challenge with this project was organisation of the CSS. CSS can easily get messy and Boardingware wanted a CSS system that was structured in a way that can be easily maintained and built upon. The way this problem was tackled was two-fold, one, standardising naming conventions throughout the HTML (BEM), and two, structuring and separating files logically.',
-      'Another enjoyable challenge was making the web application responsive and available across major browsers. The HTML structure was a lot more complicated than the standard website and thus pushed my skills further so that an elegant solution could be reached.',
-      'Contracted to implement a major re-design of their web application. This involved pure front-end development: translating designs into responsive HTML (via Jade templates), CSS (using Sass as the style sheet language and Bootstrap), integrating JavaScript libraries and using BEM methodology to manage their styling system.'
+      '<a href="//www.boardingware.com" target="_blank" style="color:#1C4891">Boardingware</a> is a boarding school management system that spans across multiple platforms and applications. I was contracted to implement a major redesign of their web application. This mainly involved building html structure via Jade templates, CSS and a touch of javascript for their existing platform.',
+      'The main challenge with this project was organisation of the CSS. CSS can easily get messy and Boardingware wanted a CSS system that was structured in a way that can be easily maintained and built upon. The way this problem was tackled was two-fold, one, standardising naming conventions throughout the HTML(BEM - encouraging re-usable components), and two, structuring and separating files logically.',
+      'Another enjoyable challenge was making the web application responsive and available across major browsers. The HTML structure was a lot more complicated than the standard website and thus pushed my skills further so that an elegant solution could be reached.'
     ],
     tags: [
       'Front-end Development',
@@ -456,20 +479,18 @@ export const BOARDINGWARE = {
     ],
     facets: [
       {
-        icons: ['Sass', 'Boostrap 4'],
-        title: 'Sass/Bootstrap',
+        icons: ['Sass', 'Bootstrap 4'],
+        title: 'Sass',
         text: [
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus viverra vitae congue eu consequat ac felis. Eget nunc lobortis mattis aliquam.',
-          'Ut sem nulla pharetra diam sit amet nisl. Tellus orci ac auctor augue mauris augue neque. Morbi non arcu risus quis varius quam. Varius vel pharetra vel turpis nunc eget lorem dolor. In dictum non consectetur a. ',
-          'Massa tincidunt dui ut ornare lectus sit amet. Ornare arcu odio ut sem nulla pharetra diam sit amet. Dictum non consectetur a erat nam at lectus urna. Elementum pulvinar etiam non quam lacus suspendisse. Congue mauris rhoncus aenean vel elit scelerisque. Congue mauris rhoncus aenean vel. Amet est placerat in egestas erat.'
+          'This stylesheet language made the Boardingware CSS more readable, clean and most importantly, maintainable.',
+          'It helped determine some of the organisation of the stylesheets as we could split off group variables into their own files such as colors or typography. Simultaneously making it easy to ensure browser compatibility through browser prefix mixins for commonly used properties.'
         ]
       },
       {
         icons: ['BEM'],
         title: 'Block Element Modifier',
         text: [
-          'Interdum varius sit amet mattis. Feugiat sed lectus vestibulum mattis ullamcorper. Sagittis vitae et leo duis ut. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Tincidunt ornare massa eget egestas purus. In aliquam sem fringilla ut morbi tincidunt. Volutpat commodo sed egestas egestas fringilla phasellus faucibus.',
-          'Tristique senectus et netus et malesuada fames ac turpis egestas. Orci sagittis eu volutpat odio facilisis mauris sit amet. Sed elementum tempus egestas sed. '
+          'Using the BEM methodology - Block Element Modifier - provided a logical and consistent naming convention through the HTML. This meant that the code became easier to read but also isolated reusable components which encouraged modular blocks of CSS code.'
         ]
       }
     ]
@@ -478,22 +499,24 @@ export const BOARDINGWARE = {
     {
       heading: 'Digests Dashboard',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
+      path: '/images/Projects/Boardingware/002_w-1000px_compressed.png',
+      auto: true,
     },
     {
       heading: 'Digest Builder - Audience',
       subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
+      path: '/images/Projects/Boardingware/003_w-1000px_compressed.png',
     },
     {
       heading: 'Digest Builder - Design',
       subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
+      path: '/images/Projects/Boardingware/004_w-1000px_compressed.png',
     },
     {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
+      heading: 'Digests Dashboard',
+      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      path: '/images/Projects/Boardingware/005_w-1000px_compressed.png',
+      auto: true,
     },
   ]
 }
@@ -514,7 +537,7 @@ export const FUSION = {
     heading: 'Marine Entertainment',
     subheading: 'A Brief Overview.',
     text: [
-      'Fusion Entertainment are leaders in creating audio equipment such as speakers, subwoofers and amplifiers for Marine and Lifestyle entertainment. I was contracted to assist their team in building the marketing teams ecosystem via back-end development of their website.',
+      '<a href="//www.fusionentertainment.com" target="_blank" style="color:#80FF06">Fusion Entertainment</a> are leaders in creating audio equipment such as speakers, subwoofers and amplifiers for Marine and Lifestyle entertainment. I was contracted to assist their team in building the marketing teams ecosystem via back-end development of their website.',
       'Their marketing website is built on Craft CMS, which gave me the opportunity to expand my experience and knowledge surrounding custom module development for a Craft CMS - improving on my previous work with Drupal 7(LJH, PTV). This resulted in heavy PHP development with a great emphasis on implementing API Integrations throughout the contract.',
       'Craft CMS is built on top of the Yii2 framework, most of my other projects have been based off Symfony so this was a first. And unlike Drupal, with Craft custom development, referring to Yii2 often yielded more instructive results, and therefore I was able to grow and expand my familiarity with the framework.',
       'During my contract I was involved in:',
@@ -552,45 +575,35 @@ export const FUSION = {
     facets: [
       {
         icons: ['Sass', 'Boostrap 4'],
-        title: 'Sass/Bootstrap',
+        title: 'API Integration',
         text: [
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus viverra vitae congue eu consequat ac felis. Eget nunc lobortis mattis aliquam.',
-          'Ut sem nulla pharetra diam sit amet nisl. Tellus orci ac auctor augue mauris augue neque. Morbi non arcu risus quis varius quam. Varius vel pharetra vel turpis nunc eget lorem dolor. In dictum non consectetur a. ',
-          'Massa tincidunt dui ut ornare lectus sit amet. Ornare arcu odio ut sem nulla pharetra diam sit amet. Dictum non consectetur a erat nam at lectus urna. Elementum pulvinar etiam non quam lacus suspendisse. Congue mauris rhoncus aenean vel elit scelerisque. Congue mauris rhoncus aenean vel. Amet est placerat in egestas erat.'
+          'The majority of my time at Fusion required API integration with many different services via Craft CMS. This usually involved using the given API’s SDK (if provided, in some cases no SDK was available) and providing an interface for given custom modules to authorise and interact with these API’s seamlessly.'
         ]
       },
       {
         icons: ['BEM'],
-        title: 'Block Element Modifier',
+        title: 'Webhooks',
         text: [
-          'Interdum varius sit amet mattis. Feugiat sed lectus vestibulum mattis ullamcorper. Sagittis vitae et leo duis ut. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Tincidunt ornare massa eget egestas purus. In aliquam sem fringilla ut morbi tincidunt. Volutpat commodo sed egestas egestas fringilla phasellus faucibus.',
-          'Tristique senectus et netus et malesuada fames ac turpis egestas. Orci sagittis eu volutpat odio facilisis mauris sit amet. Sed elementum tempus egestas sed. '
+          'Coupled with many API integrations, there was also a need to subscribe to a few webhooks from specific services to enable Fusion the ability to act upon certain events. This is where Ngrok again became a useful tool in development over a local server, rather than having to resort to developing on a non-local environment.'
+        ]
+      },
+      {
+        icons: ['Craft CMS'],
+        title: 'Craft Module Development',
+        text: [
+          'As with most CMS systems, modules and plugins is where most of the customisations exist. And therefore the biggest focus of my contract was implementing all the required features, customisations and extensions for Fusions marketing ecosystem within Craft’s ecosystem. Although different to Drupal custom module development, I was able to take that knowledge to provide a base grounding and go forth from there with great upskilling in learning Yii2.'
+        ]
+      },
+      {
+        icons: ['Imgix'],
+        title: 'Image Transformation/Optimisation',
+        text: [
+          'As a marketing website of products, displaying high quality, accurately sized images fast was highly prioritised. Imgix was the API that helped optimize, transform and cache their images.',
+          'During my time, I implemented a customisation on top of an existing image optimisation plugin to enable greater control for content editors to have over images being displayed. This meant providing options that were available via Imgix that wasn’t previously exposed through the original plugin. This helped content editors be able to make decisions themselves over how an image should be cropped and transformed without interventions/fixes from the development team.'
         ]
       }
     ]
   },
-  figures: [
-    {
-      heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
-    },
-    {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
-    },
-    {
-      heading: 'Digest Builder - Design',
-      subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
-    },
-    {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
-    },
-  ]
 }
 
 export const LJHOOKER = {
@@ -609,7 +622,7 @@ export const LJHOOKER = {
     heading: 'New Zealand Real Estate',
     subheading: 'A Brief Overview.',
     text: [
-      'The <a href="//www.ljhooker.co.nz" target="_blank">LJ Hooker NZ</a> website was a re-implementation, an improvement on their old website during my time at Applicable. My role with this project was to:',
+      'The <a href="//www.ljhooker.co.nz" target="_blank" style="color:#F0231E">LJ Hooker NZ</a> website was a re-implementation, an improvement on their old website during my time at Applicable. My role with this project was to:',
       '<ul><li>Set up the website on Drupal through settings, content types, admin etc...</li><li>Implement a custom responsive theme for the designs provided to us</li><li>Implement custom PHP development on top of Drupal - through custom modules - to meet all of the clients expectations of a highly custom and functional CMS/website.</li></ul>',
       'LJ Hooker’s ecosystem was already established, and therefore, we needed to build a website where they could manage static content such as blog posts and general information pages but also show all their real estate data from their in house API.',
       'The nature of this project was a re-implementation. This meant there was already a wide-range of established traffic. Therefore we needed to ensure that the website worked seamlessly work across major browsers (IE, Chrome, Safari and Firefox) and devices. But also, we needed to make sure the website could handle considerable traffic and load from day one.',
@@ -642,20 +655,54 @@ export const LJHOOKER = {
     ],
     facets: [
       {
-        icons: ['Sass', 'Boostrap 4'],
-        title: 'Sass/Bootstrap',
+        icons: ['Drupal 7'],
+        title: 'Drupal 7',
         text: [
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus viverra vitae congue eu consequat ac felis. Eget nunc lobortis mattis aliquam.',
-          'Ut sem nulla pharetra diam sit amet nisl. Tellus orci ac auctor augue mauris augue neque. Morbi non arcu risus quis varius quam. Varius vel pharetra vel turpis nunc eget lorem dolor. In dictum non consectetur a. ',
-          'Massa tincidunt dui ut ornare lectus sit amet. Ornare arcu odio ut sem nulla pharetra diam sit amet. Dictum non consectetur a erat nam at lectus urna. Elementum pulvinar etiam non quam lacus suspendisse. Congue mauris rhoncus aenean vel elit scelerisque. Congue mauris rhoncus aenean vel. Amet est placerat in egestas erat.'
+          'Although most of their core data came from their own API, LJ Hooker required CMS functionality for peripheral blog and static content. On top of classic CMS functionality, Drupal was able to provide the flexibility to implement custom functionality and also a substantial library of modules that took care of many features within the scope of the project, without us having to spend time developing on. This involved modules that provided extensibility on SEO, sitemaps but perhaps most importantly multiple domains. Having the ability to have multiple domains was important as the main site needed to be split into different sites per real estate category e.g. residential, commercial, rural and coastal. Then on top of this, splitting further into local branch websites.',
+          'Therefore using Drupal allowed us to focus on LJ Hooker’s business logic and rely on the plethora of existing modules for generic functionality.'
         ]
       },
       {
-        icons: ['BEM'],
-        title: 'Block Element Modifier',
+        icons: ['Drupal 7'],
+        title: 'Drupal Themes',
         text: [
-          'Interdum varius sit amet mattis. Feugiat sed lectus vestibulum mattis ullamcorper. Sagittis vitae et leo duis ut. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Tincidunt ornare massa eget egestas purus. In aliquam sem fringilla ut morbi tincidunt. Volutpat commodo sed egestas egestas fringilla phasellus faucibus.',
-          'Tristique senectus et netus et malesuada fames ac turpis egestas. Orci sagittis eu volutpat odio facilisis mauris sit amet. Sed elementum tempus egestas sed. '
+          'Creating a custom theme for the custom design was a given for the project. The custom theme was where custom blocks of HTML and CSS were implemented so the designs could be accurately represented, consistent, responsive and have the cross-browser compatibility the specifications required.'
+        ]
+      },
+      {
+        icons: ['Drupal 7'],
+        title: 'Drupal Modules',
+        text: [
+          'This was a big part of this project development that was built using PHP. Modules house custom functionality and features for a drupal site, and this was a core requirement with LJ Hooker’s new design being highly custom as most of its core data being rendered from external services.',
+          'We had to extend knowledge on the Drupal module file organisation, available Drupal hooks and understand which points of the thread of execution to interact with.',
+          'Some examples of modules built include API integration, custom Drupal blocks, Google Analytics feature and custom templates.'
+        ]
+      },
+      {
+        icons: ['Drupal 7'],
+        title: 'API Integration',
+        text: [
+          'API Integration was a core aspect in the development of this website as the majority of the data displayed is via an API. ',
+          'The client already had established systems that manage their real estate content. Therefore, we had to integrate with their API in order to display all their real estate content on the new Drupal site. This included creating an interface that interacts with the API efficiently with authentication, caching etc...',
+          'The site also had to integrate with NZ locality API’s, Property Management API’s and the Google Maps API to extend features for real estate listings that benefit the users and administrators.',
+        ]
+      }
+      ,
+      {
+        icons: ['PDF'],
+        title: 'PDF Generation',
+        text: [
+          'LJ Hooker required the ability to generate PDFs based on a property’s listing and search results.',
+          'The biggest challenge with this PDF generation was, as with most PDF generation, the translation of web CSS into PDF friendly CSS, in order to achieve the desired result as close as we could. But also catering for many different scenarios when data for a property listing was incomplete or missing.',
+        ]
+      }
+      ,
+      {
+        icons: ['Drupal 7'],
+        title: 'Caching',
+        text: [
+          'LJ Hooker was already an established website with constant flow of traffic. Therefore we had to develop and deploy with the understanding that the website needs to be able to handle a large amount of traffic and to reduce the loading time as much as possible. This is where caching really played a vital role.',
+          'Multiple tiers of caching was implemented for LJ Hooker to cater for the existing requirements. This included caching on a server level, API level, Drupal block level and of course browser level. This increased the website\'s performance while keeping in mind that data needs to expire and be refreshed when appropriate.',
         ]
       }
     ]
@@ -664,22 +711,29 @@ export const LJHOOKER = {
     {
       heading: 'Digests Dashboard',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
+      path: '/images/Projects/LJH/002_w-1000px_compressed.png',
     },
     {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
+      heading: 'Digests Dashboard',
+      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      path: '/images/Projects/LJH/003_w-1000px_compressed.png',
+      auto: true,
     },
     {
-      heading: 'Digest Builder - Design',
-      subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
+      heading: 'Digests Dashboard',
+      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      path: '/images/Projects/LJH/004_w-1000px_compressed.png',
+      auto: true,
     },
     {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
+      heading: 'Digests Dashboard',
+      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      path: '/images/Projects/LJH/005_w-1000px_compressed.png',
+    },
+    {
+      heading: 'Digests Dashboard',
+      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      path: '/images/Projects/LJH/006_w-1000px_compressed.png',
     },
   ]
 }
@@ -730,20 +784,24 @@ export const PASIFIKA_TV = {
     ],
     facets: [
       {
-        icons: ['Sass', 'Boostrap 4'],
-        title: 'Sass/Bootstrap',
+        icons: ['Drupal 7'],
+        title: 'Drupal 7',
         text: [
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus viverra vitae congue eu consequat ac felis. Eget nunc lobortis mattis aliquam.',
-          'Ut sem nulla pharetra diam sit amet nisl. Tellus orci ac auctor augue mauris augue neque. Morbi non arcu risus quis varius quam. Varius vel pharetra vel turpis nunc eget lorem dolor. In dictum non consectetur a. ',
-          'Massa tincidunt dui ut ornare lectus sit amet. Ornare arcu odio ut sem nulla pharetra diam sit amet. Dictum non consectetur a erat nam at lectus urna. Elementum pulvinar etiam non quam lacus suspendisse. Congue mauris rhoncus aenean vel elit scelerisque. Congue mauris rhoncus aenean vel. Amet est placerat in egestas erat.'
+          'This website required a heavy amount of repetitive data to be inputted by administrators, thus the content types and content structure set up in Drupal was important to get right. There was also a need to set up the user types and permissions correctly, and provide a registration and log in flow for Broadcasters.'
         ]
       },
       {
-        icons: ['BEM'],
-        title: 'Block Element Modifier',
+        icons: ['Drupal 7'],
+        title: 'Drupal Themes',
         text: [
-          'Interdum varius sit amet mattis. Feugiat sed lectus vestibulum mattis ullamcorper. Sagittis vitae et leo duis ut. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Tincidunt ornare massa eget egestas purus. In aliquam sem fringilla ut morbi tincidunt. Volutpat commodo sed egestas egestas fringilla phasellus faucibus.',
-          'Tristique senectus et netus et malesuada fames ac turpis egestas. Orci sagittis eu volutpat odio facilisis mauris sit amet. Sed elementum tempus egestas sed. '
+          'I built a custom drupal theme which allowed for the styling of the site to be as per the provided designs. This was where the HTML and CSS was implemented so the designs could be accurately represented, consistent, responsive and have the cross-browser compatibility the specifications required.'
+        ]
+      },
+      {
+        icons: ['Drupal 7'],
+        title: 'Drupal Modules',
+        text: [
+          'The customised functionality required for this site was for smaller features across the website. The custom modules mainly output custom blocks which could do a specific piece of logic such as the social media sharing block, the search bar for the schedule table, the faqs etc.. All custom modules are built in PHP and use Drupal hooks to plug in to Drupal functionality.'
         ]
       }
     ]
@@ -752,22 +810,19 @@ export const PASIFIKA_TV = {
     {
       heading: 'Digests Dashboard',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
+      path: '/images/Projects/PasifikaTv/002_w-1000px_compressed.png',
+      auto: true,
     },
     {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
+      heading: 'Digests Dashboard',
+      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      path: '/images/Projects/PasifikaTv/003_w-1000px_compressed.png',
+      auto: true,
     },
     {
-      heading: 'Digest Builder - Design',
-      subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
-    },
-    {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
+      heading: 'Digests Dashboard',
+      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      path: '/images/Projects/PasifikaTv/004_w-1000px_compressed.png',
     },
   ]
 }
@@ -785,12 +840,10 @@ export const PORTFOLIO = {
   }],
   languages: ['JavaScript','HTML5','CSS3'],
   intro: {
-    heading: 'Lorem Ipsum Dolar',
+    heading: 'Collection of Past Projects & Works',
     subheading: 'A Brief Overview.',
     text: [
-      'Amet dictum sit amet justo donec. Ornare quam viverra orci sagittis eu volutpat odio. Tellus id interdum velit laoreet id. Feugiat in fermentum posuere urna nec tincidunt.',
-      'Dignissim cras tincidunt lobortis feugiat. Praesent semper feugiat nibh sed pulvinar proin. Vulputate eu scelerisque felis imperdiet proin. Erat pellentesque adipiscing commodo elit at imperdiet. Mauris sit amet massa vitae tortor condimentum. Enim sed faucibus turpis in eu mi bibendum neque egestas.',
-      'Malesuada fames ac turpis egestas maecenas pharetra convallis. Ultrices dui sapien eget mi proin sed libero enim.'
+      'This project was an opportunity to redesign my previous online portfolio, upskill in React and use ITCSS in conjunction with BEM to optimise CSS styling structure, organisation and implementation.'
     ],
     tags: [
       'Front-end Development',
@@ -813,46 +866,24 @@ export const PORTFOLIO = {
     ],
     facets: [
       {
-        icons: ['Sass', 'Boostrap 4'],
-        title: 'Sass/Bootstrap',
+        icons: ['React'],
+        title: 'React',
         text: [
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus viverra vitae congue eu consequat ac felis. Eget nunc lobortis mattis aliquam.',
-          'Ut sem nulla pharetra diam sit amet nisl. Tellus orci ac auctor augue mauris augue neque. Morbi non arcu risus quis varius quam. Varius vel pharetra vel turpis nunc eget lorem dolor. In dictum non consectetur a. ',
-          'Massa tincidunt dui ut ornare lectus sit amet. Ornare arcu odio ut sem nulla pharetra diam sit amet. Dictum non consectetur a erat nam at lectus urna. Elementum pulvinar etiam non quam lacus suspendisse. Congue mauris rhoncus aenean vel elit scelerisque. Congue mauris rhoncus aenean vel. Amet est placerat in egestas erat.'
+          'Learning and upskilling in React was an enjoyable experience. I tried to focus on creating functional components and making use of the Hooks system, which provided the interface for  functional components to become, in a sense, more ‘smarter’.',
+          'Although this project wasn’t data heavy, it provided opportunities to use state and component life cycles through hooks, and also become familiar with props and data being shared among the hierarchy of components.'
         ]
       },
       {
-        icons: ['BEM'],
-        title: 'Block Element Modifier',
+        icons: ['CSS3'],
+        title: 'ITCSS',
         text: [
-          'Interdum varius sit amet mattis. Feugiat sed lectus vestibulum mattis ullamcorper. Sagittis vitae et leo duis ut. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Tincidunt ornare massa eget egestas purus. In aliquam sem fringilla ut morbi tincidunt. Volutpat commodo sed egestas egestas fringilla phasellus faucibus.',
-          'Tristique senectus et netus et malesuada fames ac turpis egestas. Orci sagittis eu volutpat odio facilisis mauris sit amet. Sed elementum tempus egestas sed. '
+          'After each project I’ve always reflected on how the CSS could be better. I believe it always starts out clean and organised, but inevitably becomes a bit unruly. Therefore, after coming across ITCSS, I wanted the opportunity to implement this system over using styled components with React.',
+          'ITCSS or Inverted Triangle CSS is a fully managed architecture that can work extremely well with BEM. It forces you to organise your CSS files into several sections in the form of an inverted triangle. The further down the triangle your css is, the more specific and explicit would the css be. Among many benefits, one major is it reduces the number of times you override other CSS by controlling use of specificity. This in turn reduces the size of your CSS files and makes it easy to pinpoint where and when specific styles are being used - very useful when debugging.',
+          'I would like to take this architecture further in other projects when the opportunity arises to refine and improve maintainability and scalability of CSS.',
         ]
       }
     ]
   },
-  figures: [
-    {
-      heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
-    },
-    {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
-    },
-    {
-      heading: 'Digest Builder - Design',
-      subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
-    },
-    {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
-    },
-  ]
 }
 
 export const ARCHITECTURAL_PORTFOLIO = {
@@ -872,35 +903,71 @@ export const ARCHITECTURAL_PORTFOLIO = {
     subheading: 'University of Auckland.',
     text: [
       'Before traversing the web development landscape, I studied Architecture at the University of Auckland. Through my studies I honed my skills in designing - learning how to go from ideas and concepts, to a polished realisation.',
-      'The range of technical skills learnt to practice design and creativity was vast, spanning from drawing, to sketching, to modelling, to software prototyping - to name a few. The most exciting part was combining these skills to produce something completely unexpected. For example, for one project I began with the contours of the landscape, built a 3d model from it, abstracted the topography through sketches, overlayed these sketches, transferred the pattern on illustrator, and built a laser cut model so I could conceptualise a space that took inspiration from the surrounding landscape. I was never quite sure where iterations would lead me and that was always thrilling.',
-      'This portfolio is a culmination of projects undertaken during my studies. All projects starkly differ, therefore I hope you can see my experimentation with different process, tools and ultimately see my journey in learning how to design and how to be creative.',
-      '<a href="https://dog1qqresop9s.cloudfront.net/ZKzYxRPszTLVZeq6HchM-ArchitecturalPortfolio.pdf" download>Download Portfolio</a>'
+      'The range of technical skills learnt to practice design and creativity was vast, spanning from drawing, to sketching, to modelling, to software prototyping - to name a few. The most exciting part was combining these skills to produce something completely unexpected. For example, for one project I began with the contours of the landscape, built a 3d model from it, abstracted the topography through sketches, overlayed these sketches, transferred the pattern on illustrator, and built a laser cut model so I could conceptualise a space that took inspiration from the surrounding landscape. I was never quite sure where iterations would lead me and that was always exciting.',
+      'This portfolio is a culmination of projects undertaken during my studies. All projects starkly differ, therefore I hope you can see my experimentation with different processes, tools and ultimately see my journey in learning how to design and how to be creative.',
+      '<a href="https://dog1qqresop9s.cloudfront.net/ZKzYxRPszTLVZeq6HchM-ArchitecturalPortfolio.pdf" style="color:#606EE8" download>Download Portfolio</a>'
     ],
-    tags: ['Design'],
+    tags: ['Design', 'Prototyping'],
     icons: [
       'Adobe Photoshop', 'Adobe Illustrator', 'Rhinoceros 3d', '3DS Max', 'AutoCad', 'Adobe InDesign',
     ]
   },
+  development: {
+    heading: 'Technical Skills',
+    subheading: 'A sample of programmes used.',
+    text: [
+      'During my time at university, I had a lot of opportunity to try many different programmes to assist with creative design. Here are a few that I found incredibly useful.'
+    ],
+    facets: [
+      {
+        icons: ['AutoCad'],
+        title: 'AutoCad',
+        text: [
+          'I favoured using AutoCAD for 2D drawings - especially architectural plans. It was an intuitive interface that covered a lot of the nuances with drawing architectural plans, encouraged best practices and always produced a clean and precise plan.'
+        ]
+      },
+      {
+        icons: ['Rhinoceros 3d'],
+        title: 'Rhinoceros 3D',
+        text: [
+          'Rhino is a 3D modelling tool that I found to be very intuitive, versatile and powerful.',
+          'Rhino provided an environment where you can build a 3D representation of the landscape, then build up the architectural design within this landscape. Having this 3D model gave me the ability to understand the relationship between the landscape and said building, be able to visual the 3D space, but also provided the tools to render the model, create the necessary pieces for a physical model, and get sections of the design.'
+        ]
+      },
+      {
+        icons: ['Adobe Photoshop'],
+        title: 'Adobe Photoshop',
+        text: [
+          'Photoshop was incredibly useful at every stage of the design. It was a tool that captured and expressed the sensory/emotive side of a particular idea, concept or design. There is a lot that can be achieved with layering textures, colors, enhancing shadows and light on top of a render, thus, it was a vital program during my studies.'
+        ]
+      }
+    ]
+  },
   figures: [
     {
-      heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
+      heading: 'Site Plans',
+      subheading: 'Site plans showing where designs sit, as well as the surrounding topography.',
+      path: '/images/Projects/ArchitecturalPortfolio/002_w-1000px_compressed.png',
     },
     {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
+      heading: 'Technical Drawings',
+      subheading: '',
+      path: '/images/Projects/ArchitecturalPortfolio/003_w-1000px_compressed.png',
     },
     {
-      heading: 'Digest Builder - Design',
-      subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
+      heading: 'Typography Mapping',
+      subheading: 'Cross referincing current map with previous river beds for conceptual inspiration.',
+      path: '/images/Projects/ArchitecturalPortfolio/004_w-1000px_compressed.png',
     },
     {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
+      heading: 'Technical Drawings',
+      subheading: '',
+      path: '/images/Projects/ArchitecturalPortfolio/005_w-1000px_compressed.png',
+    },
+    {
+      heading: 'Axo Media Drawings',
+      subheading: '',
+      path: '/images/Projects/ArchitecturalPortfolio/006_w-1000px_compressed.png',
     },
   ]
 }
@@ -922,9 +989,9 @@ export const IRONBANK = {
     subheading: 'University of Auckland.',
     text: [
       'This was a group project for an Architectural Technology paper for my Architectural studies.',
-      'This is an in-depth article on the Ironbank building in Auckland, New Zealand. Our main aim was to understand and explain the main ideas and concepts behind the unique design, the choice of using iron as the facade(as it is part of its namesake) and the nuances with building with such a corrosive material.',
+      'This is an in-depth article on the Ironbank building in Auckland, New Zealand. Our main aim was to understand and explain the drivers and concepts behind this unique design, such as the choice of using iron as the facade - its namesake, the nuances with building with such a corrosive material and the challenges with adhering to Karangahape Road’s urban fabric.',
       'Through research and interviewing the architect, it was interesting to hear the process of how the building was realised and the intricate relationship between design and engineering.',
-      '<a href="https://dog1qqresop9s.cloudfront.net/qdjWVGpmftwWBVm2ND3w-Ironbank.pdf" download>Download Article</a>'
+      '<a href="https://dog1qqresop9s.cloudfront.net/qdjWVGpmftwWBVm2ND3w-Ironbank.pdf" style="color:#FF830F" download>Download Article</a>'
     ],
     tags: ['Architectural Technology'],
     icons: [
@@ -934,24 +1001,19 @@ export const IRONBANK = {
   },
   figures: [
     {
-      heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
+      heading: 'Containers',
+      subheading: 'Cranking of weathered stainless steel containers dictated from surrounding bridges & street lines.',
+      path: '/images/Projects/Ironbank/004_w-1000px_compressed.png',
     },
     {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
+      heading: 'Facade',
+      subheading: 'References the historical and unique character of the eclectic scene of Karangahape Road.',
+      path: '/images/Projects/Ironbank/002_w-1000px_compressed.png',
     },
     {
-      heading: 'Digest Builder - Design',
-      subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data',
-      path: '/images/Projects/FusionEntertainment/001_w-1000px_compressed.png',
-    },
-    {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
+      heading: 'Sustainability',
+      subheading: 'Intentional sustainable design including strategic placement of windows, solar panels, re-use of rain water etc...',
+      path: '/images/Projects/Ironbank/003_w-1000px_compressed.png',
     },
   ]
 }

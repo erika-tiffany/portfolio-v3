@@ -17,16 +17,18 @@ export const FigureImage = (props) => {
 }
 
 function useWidthResize(container, auto) {
-  const defaultHeight = auto ? 'auto' : 0;
+  // const defaultHeight = auto ? 'auto' : 0;
   const [width, setWidth] = useState(0);
-  const [height, setHeight] = useState(defaultHeight);
+  const [height, setHeight] = useState('auto');
 
   useEffect(() => {
     function handleHeightChange() {
       const currentWidth = container.current.offsetWidth;
       if (currentWidth !== width) setWidth(currentWidth);
 
-      if (defaultHeight === 'auto') return;
+      if (auto) return;
+
+      if (width === 0) return;
 
       const newHeight = (currentWidth / 16) * 9;
       if (newHeight === height) return;
