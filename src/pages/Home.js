@@ -29,7 +29,7 @@ export const Home = (props) => {
         render={ visible => (
           <>
             <SectionHeader subheading="Hi, I'm a Kiwi that enjoys dipping my feet in all aspects of development."
-                           heading="What I Can Do"
+                           heading="Skillset"
                            visible={ visible } />
             <SkillsList skills={ props.skills } 
                         visible={ visible } 
@@ -40,7 +40,7 @@ export const Home = (props) => {
 
       <Section className="section--margin-bottom" render={ visible => (
         <>
-          <SectionHeader subheading="What I've worked on."
+          <SectionHeader subheading="Past Development experience."
                          heading="Selected Works & Projects"
                          visible={ visible } />
           <ul className="reset-list" id="projects">
