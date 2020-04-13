@@ -409,20 +409,20 @@ export const MAGNITY_WEB = {
   },
   figures: [
     {
-      heading: 'Long one',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      heading: 'Landing page',
+      subheading: '',
       path: '/MagnityWebsite/002_w-1000px_compressed.png',
       auto: true,
     },
     {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
+      heading: 'Content page - Integrations',
+      subheading: '',
       path: '/MagnityWebsite/003_w-1000px_compressed.png',
       auto: true,
     },
     {
-      heading: 'Digest Builder - Design',
-      subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data',
+      heading: 'Content page - Features',
+      subheading: '',
       path: '/MagnityWebsite/004_w-1000px_compressed.png',
       auto: true,
     },
@@ -485,24 +485,24 @@ export const BOARDINGWARE = {
   },
   figures: [
     {
-      heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      heading: 'Daily Care',
+      subheading: '',
       path: '/Boardingware/002_w-1000px_compressed.png',
       auto: true,
     },
     {
-      heading: 'Digest Builder - Audience',
-      subheading: 'Select the target audience for a digest via Intercom segments and tags.',
+      heading: 'Schedule Page',
+      subheading: '',
       path: '/Boardingware/003_w-1000px_compressed.png',
     },
     {
-      heading: 'Digest Builder - Design',
-      subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data',
+      heading: 'Requests Page',
+      subheading: '',
       path: '/Boardingware/004_w-1000px_compressed.png',
     },
     {
-      heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      heading: 'Tablet View - Student Page',
+      subheading: '',
       path: '/Boardingware/005_w-1000px_compressed.png',
       auto: true,
     },
@@ -691,30 +691,30 @@ export const LJHOOKER = {
   },
   figures: [
     {
-      heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      heading: 'Commercial Real Estate',
+      subheading: 'Commercial section\'s landing page',
       path: '/LJH/002_w-1000px_compressed.png',
     },
     {
-      heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      heading: 'Property Search Results',
+      subheading: '',
       path: '/LJH/003_w-1000px_compressed.png',
       auto: true,
     },
     {
-      heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      heading: 'Property Page',
+      subheading: '',
       path: '/LJH/004_w-1000px_compressed.png',
       auto: true,
     },
     {
-      heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      heading: 'Property Management Content Page',
+      subheading: '',
       path: '/LJH/005_w-1000px_compressed.png',
     },
     {
-      heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      heading: 'Blog',
+      subheading: '',
       path: '/LJH/006_w-1000px_compressed.png',
     },
   ]
@@ -787,20 +787,20 @@ export const PASIFIKA_TV = {
   },
   figures: [
     {
-      heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      heading: 'Landing Page',
+      subheading: '',
       path: '/PasifikaTv/002_w-1000px_compressed.png',
       auto: true,
     },
     {
-      heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      heading: 'Schedule Timetable',
+      subheading: '',
       path: '/PasifikaTv/003_w-1000px_compressed.png',
       auto: true,
     },
     {
-      heading: 'Digests Dashboard',
-      subheading: 'Dashboard of user’s digests, published, live and archived.',
+      heading: 'Latest News',
+      subheading: '',
       path: '/PasifikaTv/004_w-1000px_compressed.png',
     },
   ]
@@ -858,6 +858,21 @@ export const PORTFOLIO = {
           'I would like to take this architecture further in other projects when the opportunity arises to refine and improve maintainability and scalability of CSS.',
         ]
       }
+    ]
+  },
+  cloud: {
+    heading: 'AWS Solutions',
+    subheading: 'A deeper look in.',
+    text: [],
+    facets: [
+      {
+        icons: ['Amazon Web Services', 'AWS S3', 'AWS Cloudwatch'],
+        title: 'S3/Cloudfront',
+        text: [
+          'Because this project didn’t require a client side server like Express, the project could be served as a static website after building react assets. Therefore storing on S3 and using Cloudfront for speed was an easy decision to make.',
+          'I also used the AWS command line so I can build assets and then sync the given S3 bucket at the same time, hence easily updating the static files on S3.'
+        ]
+      },
     ]
   },
 }
