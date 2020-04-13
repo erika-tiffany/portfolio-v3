@@ -11,7 +11,7 @@ export const Facet = (props) => {
   }
 
   return (
-    <VisibilitySensor active={ !visible } onChange={ handleVisibilityChange }>
+    <VisibilitySensor active={ !visible } partialVisibility={ true } onChange={ handleVisibilityChange }>
       <div className={ 'facet ' + (visible ? 'animated fadeIn' : 'hidden') }>
         <ul className="facet__icons">
           { props.icons.map((icon, key) => (

@@ -6,8 +6,12 @@
   @include reset-list;
 }
 
-.facet {
+.facet-list > li {
   margin-top: 55px;
+}
+
+.facet-list > li:first-child {
+  margin-top: 0px;
 }
 
   .facet__icons {

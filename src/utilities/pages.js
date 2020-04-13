@@ -174,10 +174,7 @@ export const MAGNITY_APP = {
   development: {
     heading: 'Development',
     subheading: 'A deeper look in.',
-    text: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-    ],
+    text: [],
     facets: [
       {
         icons: ['Laravel'],
@@ -251,10 +248,7 @@ export const MAGNITY_APP = {
   cloud: {
     heading: 'AWS Solutions',
     subheading: 'A deeper look in.',
-    text: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-    ],
+    text: [],
     facets: [
       {
         icons: ['AWS ElasticBeanstalk', 'AWS EC2'],
@@ -392,10 +386,7 @@ export const MAGNITY_WEB = {
   development: {
     heading: 'Development',
     subheading: 'A deeper look in.',
-    text: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-    ],
+    text: [],
     facets: [
       {
         icons: ['Google Analytics'],
@@ -473,10 +464,7 @@ export const BOARDINGWARE = {
   development: {
     heading: 'Development',
     subheading: 'A deeper look in.',
-    text: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-    ],
+    text: [],
     facets: [
       {
         icons: ['Sass', 'Bootstrap 4'],
@@ -568,10 +556,7 @@ export const FUSION = {
   development: {
     heading: 'Development',
     subheading: 'A deeper look in.',
-    text: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-    ],
+    text: [],
     facets: [
       {
         icons: ['Sass', 'Boostrap 4'],
@@ -649,10 +634,7 @@ export const LJHOOKER = {
   development: {
     heading: 'Development',
     subheading: 'A deeper look in.',
-    text: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-    ],
+    text: [],
     facets: [
       {
         icons: ['Drupal 7'],
@@ -778,10 +760,7 @@ export const PASIFIKA_TV = {
   development: {
     heading: 'Development',
     subheading: 'A deeper look in.',
-    text: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-    ],
+    text: [],
     facets: [
       {
         icons: ['Drupal 7'],
@@ -860,10 +839,7 @@ export const PORTFOLIO = {
   development: {
     heading: 'Development',
     subheading: 'A deeper look in.',
-    text: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-    ],
+    text: [],
     facets: [
       {
         icons: ['React'],
