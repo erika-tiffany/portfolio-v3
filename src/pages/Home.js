@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { slice } from 'lodash';
 import { PageHeader } from '../components/PageHeader';
 import { Footer } from '../components/Footer';
@@ -11,6 +11,10 @@ import { Link } from 'react-router-dom';
 
 export const Home = (props) => {
   const colors = slice(props.stackColors, 0, 3);
+
+  useEffect(() => {
+    document.title = 'Erika Kishi | Portfolio';
+  });
 
   return (
     <>

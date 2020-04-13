@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { slice } from 'lodash';
 import { PageHeader } from '../components/PageHeader';
 import { Duration } from '../components/Project/Duration';
@@ -14,6 +14,10 @@ import { Figure } from '../components/Project/Figure';
 
 export const Project = (props) => {
   const colors = slice(props.stackColors, 0, 3);
+
+  useEffect(() => {
+    document.title = 'Erika Kishi | ' + props.name;
+  });
 
   return (
     <>
