@@ -3,20 +3,27 @@ import LazyLoad from 'react-lazyload';
 
 export const FigureImage = (props) => {
   const container = useRef(null);
-  const height = useWidthResize(container, props.auto);
+  const [loaded, setLoaded] = useState(false);
+  const height = useWidthResize(container, props.auto, loaded);
+
+  function handleOnLoad() {
+    setLoaded(true);
+  }
 
   return (
-    <div className="project-figure__container" 
-         ref={ container } 
-         style={ { height: height } }>
-      <LazyLoad once>
-        <img alt="test" src={ '//portfolio-v3-assets.s3.us-east-2.amazonaws.com/images/projects' + props.path } />
-      </LazyLoad>
+    <div className="project-figure__container" >
+      <div ref={ container } style={ { height: height } }>
+        <LazyLoad once>
+          <img alt="test" 
+               src={ '//portfolio-v3-assets.s3.us-east-2.amazonaws.com/images/projects' + props.path }
+               onLoad={ handleOnLoad } />
+        </LazyLoad>
+      </div>
     </div>
   );
 }
 
-function useWidthResize(container, auto) {
+function useWidthResize(container, auto, loaded) {
   // const defaultHeight = auto ? 'auto' : 0;
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState('auto');
@@ -39,7 +46,7 @@ function useWidthResize(container, auto) {
   
     window.addEventListener('resize', handleHeightChange, false);
     return () => window.removeEventListener('resize', handleHeightChange, false);
-  })
+  }, [loaded, height, width, auto, container])
 
   return height;
 }

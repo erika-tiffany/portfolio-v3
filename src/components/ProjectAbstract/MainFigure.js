@@ -32,7 +32,7 @@ export const MainFigure = (props) => {
             className="project-abstract__figure__main" 
             style={ { height: height } }>
       <LazyLoad once>
-        <img src={ '/images/Projects/' + props.folderName + '/001_w-1000px_compressed.png' }
+        <img src={ '//portfolio-v3-assets.s3.us-east-2.amazonaws.com/images/projects/' + props.folderName + '/001_w-1000px_compressed.png' }
              alt={ props.project + ' main abstract image' } />
       </LazyLoad>
     </figure>
