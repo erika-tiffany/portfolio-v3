@@ -10,7 +10,7 @@ export const FigureImage = (props) => {
          ref={ container } 
          style={ { height: height } }>
       <LazyLoad once>
-        <img alt="test" src={ props.path } />
+        <img alt="test" src={ '//portfolio-v3-assets.s3.us-east-2.amazonaws.com/images/projects' + props.path } />
       </LazyLoad>
     </div>
   );

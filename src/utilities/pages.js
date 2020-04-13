@@ -78,7 +78,7 @@ export const HOME = {
     },
     {
       project: 'Pasifika TV',
-      folderName: 'PasifikaTV',
+      folderName: 'PasifikaTv',
       skills: [
         'Front-end Development',
         'Back-end Development',
@@ -319,32 +319,32 @@ export const MAGNITY_APP = {
     {
       heading: 'Digests Dashboard',
       subheading: 'Dashboard of user’s published, live and archived digests.',
-      path: '/images/Projects/MagnityApp/002_w-1000px_compressed.png',
+      path: '/MagnityApp/002_w-1000px_compressed.png',
     },
     {
       heading: 'Digest Builder - Audience',
       subheading: 'Target the intended audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityApp/003_w-1000px_compressed.png',
+      path: '/MagnityApp/003_w-1000px_compressed.png',
     },
     {
       heading: 'Digest Builder - Design',
       subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data.',
-      path: '/images/Projects/MagnityApp/004_w-1000px_compressed.png',
+      path: '/MagnityApp/004_w-1000px_compressed.png',
     },
     {
       heading: 'Digest Builder - Channel',
       subheading: 'Tailor how to send digest via Intercom’s in-app messenger.',
-      path: '/images/Projects/MagnityApp/005_w-1000px_compressed.png',
+      path: '/MagnityApp/005_w-1000px_compressed.png',
     },
     {
       heading: 'Published Digest',
       subheading: 'Personalised tailored digests for each user.',
-      path: '/images/Projects/MagnityApp/006_w-1000px_compressed.png',
+      path: '/MagnityApp/006_w-1000px_compressed.png',
     },
     {
       heading: 'Digest Summary',
       subheading: 'Display engagement and feedback with a real time overview of how each digest is performing.',
-      path: '/images/Projects/MagnityApp/001_w-1000px_compressed.png',
+      path: '/MagnityApp/001_w-1000px_compressed.png',
     },
   ]
 }
@@ -420,19 +420,19 @@ export const MAGNITY_WEB = {
     {
       heading: 'Long one',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/MagnityWebsite/002_w-1000px_compressed.png',
+      path: '/MagnityWebsite/002_w-1000px_compressed.png',
       auto: true,
     },
     {
       heading: 'Digest Builder - Audience',
       subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/MagnityWebsite/003_w-1000px_compressed.png',
+      path: '/MagnityWebsite/003_w-1000px_compressed.png',
       auto: true,
     },
     {
       heading: 'Digest Builder - Design',
       subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data',
-      path: '/images/Projects/MagnityWebsite/004_w-1000px_compressed.png',
+      path: '/MagnityWebsite/004_w-1000px_compressed.png',
       auto: true,
     },
   ]
@@ -499,23 +499,23 @@ export const BOARDINGWARE = {
     {
       heading: 'Digests Dashboard',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/Boardingware/002_w-1000px_compressed.png',
+      path: '/Boardingware/002_w-1000px_compressed.png',
       auto: true,
     },
     {
       heading: 'Digest Builder - Audience',
       subheading: 'Select the target audience for a digest via Intercom segments and tags.',
-      path: '/images/Projects/Boardingware/003_w-1000px_compressed.png',
+      path: '/Boardingware/003_w-1000px_compressed.png',
     },
     {
       heading: 'Digest Builder - Design',
       subheading: 'Design custom digests with text, metrics and graphs based on each target audience user’s event data',
-      path: '/images/Projects/Boardingware/004_w-1000px_compressed.png',
+      path: '/Boardingware/004_w-1000px_compressed.png',
     },
     {
       heading: 'Digests Dashboard',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/Boardingware/005_w-1000px_compressed.png',
+      path: '/Boardingware/005_w-1000px_compressed.png',
       auto: true,
     },
   ]
@@ -711,29 +711,29 @@ export const LJHOOKER = {
     {
       heading: 'Digests Dashboard',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/LJH/002_w-1000px_compressed.png',
+      path: '/LJH/002_w-1000px_compressed.png',
     },
     {
       heading: 'Digests Dashboard',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/LJH/003_w-1000px_compressed.png',
+      path: '/LJH/003_w-1000px_compressed.png',
       auto: true,
     },
     {
       heading: 'Digests Dashboard',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/LJH/004_w-1000px_compressed.png',
+      path: '/LJH/004_w-1000px_compressed.png',
       auto: true,
     },
     {
       heading: 'Digests Dashboard',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/LJH/005_w-1000px_compressed.png',
+      path: '/LJH/005_w-1000px_compressed.png',
     },
     {
       heading: 'Digests Dashboard',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/LJH/006_w-1000px_compressed.png',
+      path: '/LJH/006_w-1000px_compressed.png',
     },
   ]
 }
@@ -810,19 +810,19 @@ export const PASIFIKA_TV = {
     {
       heading: 'Digests Dashboard',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/PasifikaTv/002_w-1000px_compressed.png',
+      path: '/PasifikaTv/002_w-1000px_compressed.png',
       auto: true,
     },
     {
       heading: 'Digests Dashboard',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/PasifikaTv/003_w-1000px_compressed.png',
+      path: '/PasifikaTv/003_w-1000px_compressed.png',
       auto: true,
     },
     {
       heading: 'Digests Dashboard',
       subheading: 'Dashboard of user’s digests, published, live and archived.',
-      path: '/images/Projects/PasifikaTv/004_w-1000px_compressed.png',
+      path: '/PasifikaTv/004_w-1000px_compressed.png',
     },
   ]
 }
@@ -905,7 +905,7 @@ export const ARCHITECTURAL_PORTFOLIO = {
       'Before traversing the web development landscape, I studied Architecture at the University of Auckland. Through my studies I honed my skills in designing - learning how to go from ideas and concepts, to a polished realisation.',
       'The range of technical skills learnt to practice design and creativity was vast, spanning from drawing, to sketching, to modelling, to software prototyping - to name a few. The most exciting part was combining these skills to produce something completely unexpected. For example, for one project I began with the contours of the landscape, built a 3d model from it, abstracted the topography through sketches, overlayed these sketches, transferred the pattern on illustrator, and built a laser cut model so I could conceptualise a space that took inspiration from the surrounding landscape. I was never quite sure where iterations would lead me and that was always exciting.',
       'This portfolio is a culmination of projects undertaken during my studies. All projects starkly differ, therefore I hope you can see my experimentation with different processes, tools and ultimately see my journey in learning how to design and how to be creative.',
-      '<a href="https://dog1qqresop9s.cloudfront.net/ZKzYxRPszTLVZeq6HchM-ArchitecturalPortfolio.pdf" style="color:#606EE8" download>Download Portfolio</a>'
+      '<a href="https://portfolio-v3-assets.s3.us-east-2.amazonaws.com/ZKzYxRPszTLVZeq6HchM-ArchitecturalPortfolio.pdf" style="color:#606EE8" download>Download Portfolio</a>'
     ],
     tags: ['Design', 'Prototyping'],
     icons: [
@@ -947,27 +947,27 @@ export const ARCHITECTURAL_PORTFOLIO = {
     {
       heading: 'Site Plans',
       subheading: 'Site plans showing where designs sit, as well as the surrounding topography.',
-      path: '/images/Projects/ArchitecturalPortfolio/002_w-1000px_compressed.png',
+      path: '/ArchitecturalPortfolio/002_w-1000px_compressed.png',
     },
     {
       heading: 'Technical Drawings',
       subheading: '',
-      path: '/images/Projects/ArchitecturalPortfolio/003_w-1000px_compressed.png',
+      path: '/ArchitecturalPortfolio/003_w-1000px_compressed.png',
     },
     {
       heading: 'Typography Mapping',
       subheading: 'Cross referincing current map with previous river beds for conceptual inspiration.',
-      path: '/images/Projects/ArchitecturalPortfolio/004_w-1000px_compressed.png',
+      path: '/ArchitecturalPortfolio/004_w-1000px_compressed.png',
     },
     {
       heading: 'Technical Drawings',
       subheading: '',
-      path: '/images/Projects/ArchitecturalPortfolio/005_w-1000px_compressed.png',
+      path: '/ArchitecturalPortfolio/005_w-1000px_compressed.png',
     },
     {
       heading: 'Axo Media Drawings',
       subheading: '',
-      path: '/images/Projects/ArchitecturalPortfolio/006_w-1000px_compressed.png',
+      path: '/ArchitecturalPortfolio/006_w-1000px_compressed.png',
     },
   ]
 }
@@ -991,7 +991,7 @@ export const IRONBANK = {
       'This was a group project for an Architectural Technology paper for my Architectural studies.',
       'This is an in-depth article on the Ironbank building in Auckland, New Zealand. Our main aim was to understand and explain the drivers and concepts behind this unique design, such as the choice of using iron as the facade - its namesake, the nuances with building with such a corrosive material and the challenges with adhering to Karangahape Road’s urban fabric.',
       'Through research and interviewing the architect, it was interesting to hear the process of how the building was realised and the intricate relationship between design and engineering.',
-      '<a href="https://dog1qqresop9s.cloudfront.net/qdjWVGpmftwWBVm2ND3w-Ironbank.pdf" style="color:#FF830F" download>Download Article</a>'
+      '<a href="https://portfolio-v3-assets.s3.us-east-2.amazonaws.com/qdjWVGpmftwWBVm2ND3w-Ironbank.pdf" style="color:#FF830F" download>Download Article</a>'
     ],
     tags: ['Architectural Technology'],
     icons: [
@@ -1003,17 +1003,17 @@ export const IRONBANK = {
     {
       heading: 'Containers',
       subheading: 'Cranking of weathered stainless steel containers dictated from surrounding bridges & street lines.',
-      path: '/images/Projects/Ironbank/004_w-1000px_compressed.png',
+      path: '/Ironbank/004_w-1000px_compressed.png',
     },
     {
       heading: 'Facade',
       subheading: 'References the historical and unique character of the eclectic scene of Karangahape Road.',
-      path: '/images/Projects/Ironbank/002_w-1000px_compressed.png',
+      path: '/Ironbank/002_w-1000px_compressed.png',
     },
     {
       heading: 'Sustainability',
       subheading: 'Intentional sustainable design including strategic placement of windows, solar panels, re-use of rain water etc...',
-      path: '/images/Projects/Ironbank/003_w-1000px_compressed.png',
+      path: '/Ironbank/003_w-1000px_compressed.png',
     },
   ]
 }
