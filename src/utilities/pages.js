@@ -526,10 +526,10 @@ export const FUSION = {
     subheading: 'A Brief Overview.',
     text: [
       '<a href="//www.fusionentertainment.com" target="_blank" style="color:#80FF06">Fusion Entertainment</a> are leaders in creating audio equipment such as speakers, subwoofers and amplifiers for Marine and Lifestyle entertainment. I was contracted to assist their team in building the marketing teams ecosystem via back-end development of their website.',
-      'Their marketing website is built on Craft CMS, which gave me the opportunity to expand my experience and knowledge surrounding custom module development for a Craft CMS - improving on my previous work with Drupal 7(LJH, PTV). This resulted in heavy PHP development with a great emphasis on implementing API Integrations throughout the contract.',
-      'Craft CMS is built on top of the Yii2 framework, most of my other projects have been based off Symfony so this was a first. And unlike Drupal, with Craft custom development, referring to Yii2 often yielded more instructive results, and therefore I was able to grow and expand my familiarity with the framework.',
+      'Their marketing website is built on Craft CMS, which gave me the opportunity to expand my experience and knowledge surrounding custom module development for a Craft CMS - improving on my previous work with Drupal 7(<a href="/projects/ljhooker" target="_blank" style="color:#80FF06">LJH</a>, <a href="/projects/pasifikatv" target="_blank" style="color:#80FF06">PTV</a>). This resulted in heavy PHP development with a great emphasis on implementing API Integrations throughout the contract.',
+      'Craft CMS is built on top of the Yii2 framework, most of my other projects have been based on Symfony so this was a first. And unlike Drupal, with Craft custom development, referring to Yii2 often yielded more instructive results, and therefore I was able to grow and expand my familiarity with the framework.',
       'During my contract I was involved in:',
-      '<ul><li>Developing a portal for their dealers to access, search and download a pool of resources. This involved tight integration with Algolia and also implementing methods to download a large number of files at a single time.</li><li>Developing a portal for their Dealers which involved a multi-tier user registration flow and integrations with their Learning Management System, Coassemble, via their API and webhooks.</li><li>Automating a few manual processes through API Integrations and scheduled tasks such as cache clean up.</li></ul>'
+      '<ul><li>Developing a portal for their dealers to access, search and download a pool of resources. This involved tight integration with API’s and implementing methods to download a large number of files at a single time.</li><li>Developing a portal for their Dealers which involved a multi-tier user registration flow and integrations with their Learning Management System via their API and webhooks.</li><li>Automating a few manual processes through API Integrations and scheduled tasks such as cache clean up.</li></ul>'
     ],
     tags: [
       'Back-end Development',
@@ -559,21 +559,21 @@ export const FUSION = {
     text: [],
     facets: [
       {
-        icons: ['Sass', 'Boostrap 4'],
+        icons: ['Craft CMS'],
         title: 'API Integration',
         text: [
           'The majority of my time at Fusion required API integration with many different services via Craft CMS. This usually involved using the given API’s SDK (if provided, in some cases no SDK was available) and providing an interface for given custom modules to authorise and interact with these API’s seamlessly.'
         ]
       },
       {
-        icons: ['BEM'],
+        icons: ['Coassemble'],
         title: 'Webhooks',
         text: [
           'Coupled with many API integrations, there was also a need to subscribe to a few webhooks from specific services to enable Fusion the ability to act upon certain events. This is where Ngrok again became a useful tool in development over a local server, rather than having to resort to developing on a non-local environment.'
         ]
       },
       {
-        icons: ['Craft CMS'],
+        icons: ['Craft CMS', 'Yii'],
         title: 'Craft Module Development',
         text: [
           'As with most CMS systems, modules and plugins is where most of the customisations exist. And therefore the biggest focus of my contract was implementing all the required features, customisations and extensions for Fusions marketing ecosystem within Craft’s ecosystem. Although different to Drupal custom module development, I was able to take that knowledge to provide a base grounding and go forth from there with great upskilling in learning Yii2.'
@@ -892,7 +892,8 @@ export const ARCHITECTURAL_PORTFOLIO = {
     heading: 'Technical Skills',
     subheading: 'A sample of programmes used.',
     text: [
-      'During my time at university, I had a lot of opportunity to try many different programmes to assist with creative design. Here are a few that I found incredibly useful.'
+      'During my time at university, I had a lot of opportunity to try many different programmes to assist with creative design.',
+      'Here are a few that I found incredibly useful:'
     ],
     facets: [
       {
