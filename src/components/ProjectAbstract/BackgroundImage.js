@@ -20,7 +20,7 @@ export const BackgroundImage = (props) => {
   return (
     <LazyLoad once>
       <img className="project-abstract__figure__background" 
-           src={ '//portfolio-v3-assets.s3.us-east-2.amazonaws.com/images/projects/' + props.folderName + '/001-background_w-500px_compressed.png' }
+           src={ 'https://d3768789qe68al.cloudfront.net/images/projects/' + props.folderName + '/001-background_w-500px_compressed.png' }
            style={ { width: width, top: top, left: left } } 
            alt={ props.project + ' main abstract image\'s background image' }/>
     </LazyLoad>

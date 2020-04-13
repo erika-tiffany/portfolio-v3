@@ -905,7 +905,7 @@ export const ARCHITECTURAL_PORTFOLIO = {
       'Before traversing the web development landscape, I studied Architecture at the University of Auckland. Through my studies I honed my skills in designing - learning how to go from ideas and concepts, to a polished realisation.',
       'The range of technical skills learnt to practice design and creativity was vast, spanning from drawing, to sketching, to modelling, to software prototyping - to name a few. The most exciting part was combining these skills to produce something completely unexpected. For example, for one project I began with the contours of the landscape, built a 3d model from it, abstracted the topography through sketches, overlayed these sketches, transferred the pattern on illustrator, and built a laser cut model so I could conceptualise a space that took inspiration from the surrounding landscape. I was never quite sure where iterations would lead me and that was always exciting.',
       'This portfolio is a culmination of projects undertaken during my studies. All projects starkly differ, therefore I hope you can see my experimentation with different processes, tools and ultimately see my journey in learning how to design and how to be creative.',
-      '<a href="https://portfolio-v3-assets.s3.us-east-2.amazonaws.com/ZKzYxRPszTLVZeq6HchM-ArchitecturalPortfolio.pdf" style="color:#606EE8" download>Download Portfolio</a>'
+      '<a href="https://d3768789qe68al.cloudfront.net/ZKzYxRPszTLVZeq6HchM-ArchitecturalPortfolio.pdf" style="color:#606EE8" download>Download Portfolio</a>'
     ],
     tags: ['Design', 'Prototyping'],
     icons: [
@@ -991,7 +991,7 @@ export const IRONBANK = {
       'This was a group project for an Architectural Technology paper for my Architectural studies.',
       'This is an in-depth article on the Ironbank building in Auckland, New Zealand. Our main aim was to understand and explain the drivers and concepts behind this unique design, such as the choice of using iron as the facade - its namesake, the nuances with building with such a corrosive material and the challenges with adhering to Karangahape Road’s urban fabric.',
       'Through research and interviewing the architect, it was interesting to hear the process of how the building was realised and the intricate relationship between design and engineering.',
-      '<a href="https://portfolio-v3-assets.s3.us-east-2.amazonaws.com/qdjWVGpmftwWBVm2ND3w-Ironbank.pdf" style="color:#FF830F" download>Download Article</a>'
+      '<a href="https://d3768789qe68al.cloudfront.net/qdjWVGpmftwWBVm2ND3w-Ironbank.pdf" style="color:#FF830F" download>Download Article</a>'
     ],
     tags: ['Architectural Technology'],
     icons: [

@@ -15,7 +15,7 @@ export const FigureImage = (props) => {
       <div ref={ container } style={ { height: height } }>
         <LazyLoad once>
           <img alt="test" 
-               src={ '//portfolio-v3-assets.s3.us-east-2.amazonaws.com/images/projects' + props.path }
+               src={ 'https://d3768789qe68al.cloudfront.net/images/projects' + props.path }
                onLoad={ handleOnLoad } />
         </LazyLoad>
       </div>
