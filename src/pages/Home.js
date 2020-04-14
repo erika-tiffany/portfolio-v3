@@ -8,6 +8,7 @@ import { Header as SectionHeader } from '../components/Section/Header';
 import { Section } from '../components/Section/Section';
 import { ProjectAbstract } from '../components/ProjectAbstract/Abstract';
 import { Link } from 'react-router-dom';
+import { Bio } from '../components/Bio';
 
 export const Home = (props) => {
   const colors = slice(props.stackColors, 0, 3);
@@ -28,7 +29,19 @@ export const Home = (props) => {
         className="section--full-viewport"
         render={ visible => (
           <>
-            <SectionHeader subheading="Hi, I'm a Kiwi that enjoys dipping my feet in all aspects of development."
+            <SectionHeader subheading="A bit about myself."
+                           heading="Hello there!"
+                           visible={ visible } />
+            <Bio visible={ visible }/>
+          </>
+        )} 
+      />
+
+      <Section 
+        className="section--full-viewport"
+        render={ visible => (
+          <>
+            <SectionHeader subheading="I enjoy dipping my feet in all aspects of development."
                            heading="Skillset"
                            visible={ visible } />
             <SkillsList skills={ props.skills } 

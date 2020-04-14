@@ -1,0 +1,31 @@
+.bio-list {
+  @include horizontal-list;
+  margin-top: 20px;
+}
+
+  .bio-list li {
+    @include display-flex;
+    @include align-items;
+    @include flex-direction(column);
+    margin-right: 26px;
+  }
+
+  .bio-list__mask {
+    margin-bottom: 10px;
+    border-radius: 100%;
+    box-shadow:    0 1px 4px 0 rgba(0,0,0,0.50);
+    overflow: hidden;
+    height:   100px;
+    width:    100px;
+  }
+
+  .bio-list__mask img {
+    height: auto;
+    width:  100%;
+  }
+
+.bio-list .subheading {
+  line-height: 1.5em;
+  text-align:  center;
+  display:     block;
+}
