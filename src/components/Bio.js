@@ -5,7 +5,7 @@ export const Bio = (props) => {
   const text = [
     'I’m a Kiwi who loves all things development with a strong background in design & creativity.',
     'Over the 4+ years of experience, I have been involved in a variety of projects as a full stack developer, as a front-end developer and a back-end developer, with a recent exploration and upskilling into the AWS space.',
-    'I love learning, I love creating and I’m a pretty friendly human being. I am currently available for remote freelancing from Japan and would love to talk to you about how I may be able to help you.'
+    'I love learning, I love creating and I’m a pretty friendly human being. I love learning, I love creating and I’m a pretty friendly human being. I am currently available for work and would love to touch base about how I may be a fit for your development team.'
   ];
 
   const list = [

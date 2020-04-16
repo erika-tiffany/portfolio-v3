@@ -8,7 +8,7 @@ import { ReactComponent as LocationNz } from '../../icons/new-zealand.svg';
 
 export const ContactLinksList = (props) => {
   const CONTACT_LINKS = [
-    { svg: Resume, href: "https://d3768789qe68al.cloudfront.net/aJjfMxTwg4CkzmqkwjLN-EK-resume.pdf" },
+    { svg: Resume, href: "https://d3768789qe68al.cloudfront.net/ZKt5yq7eH5aQscF8qU2u-EK-resume.pdf" },
     { svg: Email, href: "mailto:erikatiffany.k@gmail.com" },
     { svg: LinkedIn, href: "//www.linkedin.com/in/erika-kishi-801623188/" },
     { svg: LocationNz, href: "/" },
